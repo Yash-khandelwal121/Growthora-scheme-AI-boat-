@@ -198,18 +198,34 @@ function calculateCriticalFactCoverage(masterResearch) {
   }
 
   // 7 & 8. Eligibility (Age & Education)
-  // For safety check, they are unconditionally applicable for most schemes. If they are missing, they should be UNRESOLVED, not NOT_APPLICABLE.
+  const ageVal = (masterResearch.eligibility?.ageLimit && typeof masterResearch.eligibility.ageLimit === 'object') ? masterResearch.eligibility.ageLimit.value : masterResearch.eligibility?.ageLimit;
+  const isAgeNotApplicable = typeof ageVal === 'string' && (
+    ageVal.toLowerCase().includes('not applicable') || 
+    ageVal.toLowerCase().includes('no age') || 
+    ageVal.toLowerCase().includes('any age') ||
+    ageVal.toLowerCase() === 'none'
+  );
+
   evaluateField(
     'eligibility.ageLimit',
-    true,
-    () => (masterResearch.eligibility?.ageLimit && typeof masterResearch.eligibility.ageLimit === 'object') ? masterResearch.eligibility.ageLimit.value : masterResearch.eligibility?.ageLimit,
+    !isAgeNotApplicable,
+    () => ageVal,
     () => (masterResearch.eligibility?.ageLimit && typeof masterResearch.eligibility.ageLimit === 'object') ? masterResearch.eligibility.ageLimit.supportedBy : []
+  );
+
+  const eduVal = masterResearch.eligibility?.educationRequirement?.value;
+  const isEduNotApplicable = typeof eduVal === 'string' && (
+    eduVal.toLowerCase().includes('not applicable') || 
+    eduVal.toLowerCase().includes('no formal') || 
+    eduVal.toLowerCase().includes('no education') ||
+    eduVal.toLowerCase().includes('any') ||
+    eduVal.toLowerCase() === 'none'
   );
 
   evaluateField(
     'eligibility.educationRequirement',
-    true,
-    () => masterResearch.eligibility?.educationRequirement?.value,
+    !isEduNotApplicable,
+    () => eduVal,
     () => masterResearch.eligibility?.educationRequirement?.supportedBy || []
   );
 

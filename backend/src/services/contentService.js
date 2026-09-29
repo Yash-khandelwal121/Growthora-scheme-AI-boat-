@@ -195,6 +195,15 @@ async function generateArticle(masterResearch) {
       readiness = "needs_review";
     }
   }
+
+  // Mandatory unresolved facts override
+  const mandatoryFields = ["scheme.implementingAgency", "financialAssistance.grantAmount", "financialAssistance.maxProjectCost.manufacturing"];
+  const missingMandatory = nullCriticalFields.filter(f => mandatoryFields.includes(f));
+  if (missingMandatory.length > 0) {
+    readiness = "blocked";
+    finalArticle.humanReview.push(`Mandatory critical facts are unresolved: ${missingMandatory.join(', ')}`);
+  }
+
   finalArticle.publishReadiness = readiness;
 
   logInfo('Content orchestration completed successfully', { researchId: masterResearch.researchId });
