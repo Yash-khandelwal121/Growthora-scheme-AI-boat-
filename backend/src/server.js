@@ -28,24 +28,43 @@ app.get("/favicon.ico", (req, res) => {
   return res.status(204).end();
 });
 
-function safeMount(path, modulePath) {
-  try {
-    const router = require(modulePath);
-    app.use(path, router);
-    console.log(`[BOOT_ROUTE_OK] ${path}`);
-  } catch (error) {
-    console.error(`[BOOT_ROUTE_FAILED] ${path}`, {
-      name: error.name,
-      message: error.message,
-      stack: error.stack
-    });
-  }
+let providerRoutes = null;
+let schemeRoutes = null;
+let exportRoutes = null;
+let sanityRoutes = null;
+
+try {
+  providerRoutes = require("./routes/providerRoutes");
+  console.log("[BOOT_ROUTE_OK] /api/providers");
+} catch (error) {
+  console.error("[BOOT_ROUTE_FAILED] /api/providers", error);
 }
 
-safeMount("/api/providers", "./routes/providerRoutes");
-safeMount("/api/schemes", "./routes/schemeRoutes");
-safeMount("/api/export", "./routes/exportRoutes");
-safeMount("/api/sanity", "./routes/sanityRoutes");
+try {
+  schemeRoutes = require("./routes/schemeRoutes");
+  console.log("[BOOT_ROUTE_OK] /api/schemes");
+} catch (error) {
+  console.error("[BOOT_ROUTE_FAILED] /api/schemes", error);
+}
+
+try {
+  exportRoutes = require("./routes/exportRoutes");
+  console.log("[BOOT_ROUTE_OK] /api/export");
+} catch (error) {
+  console.error("[BOOT_ROUTE_FAILED] /api/export", error);
+}
+
+try {
+  sanityRoutes = require("./routes/sanityRoutes");
+  console.log("[BOOT_ROUTE_OK] /api/sanity");
+} catch (error) {
+  console.error("[BOOT_ROUTE_FAILED] /api/sanity", error);
+}
+
+if (providerRoutes) app.use("/api/providers", providerRoutes);
+if (schemeRoutes) app.use("/api/schemes", schemeRoutes);
+if (exportRoutes) app.use("/api/export", exportRoutes);
+if (sanityRoutes) app.use("/api/sanity", sanityRoutes);
 
 // Production-safe error handler
 app.use((err, req, res, next) => {
