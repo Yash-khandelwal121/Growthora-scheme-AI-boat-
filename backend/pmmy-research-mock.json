@@ -1,0 +1,33 @@
+{
+  "researchId": "res_mock_pmmy",
+  "researchSchemeName": "Pradhan Mantri Mudra Yojana (PMMY)",
+  "scheme": {
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "status": { "value": "active" },
+    "ministry": { "officialName": "Ministry of Micro, Small & Medium Enterprises (MSME)" }
+  },
+  "financialAssistance": {
+    "maxProjectCost": {
+      "manufacturing": { "value": "10 Lakh" },
+      "service": { "value": "10 Lakh" }
+    }
+  },
+  "eligibility": {
+    "ageLimit": { "value": "18 years" }
+  },
+  "documents": ["Aadhaar", "PAN"],
+  "sources": [
+    { "id": "src_1", "url": "https://www.mudra.org.in/", "authorityScore": 100 },
+    { "id": "src_2", "url": "https://msme.gov.in/", "authorityScore": 100 },
+    { "id": "src_3", "url": "https://www.myscheme.gov.in/", "authorityScore": 95 }
+  ],
+  "stats": {
+    "officialSourcesFound": 3,
+    "secondarySourcesFound": 0,
+    "sourcesRejected": 0
+  },
+  "mode": "free_live_test",
+  "provider": "tavily_groq",
+  "liveModelCalls": true,
+  "liveWebResearch": true
+}

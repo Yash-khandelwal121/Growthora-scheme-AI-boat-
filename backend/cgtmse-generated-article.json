@@ -1,0 +1,525 @@
+{
+  "mode": "free_live_test",
+  "liveContentGeneration": true,
+  "sourceResearchId": "res_jwwsq03w",
+  "researchSchemeName": "Credit Guarantee Scheme (CGS)",
+  "searchIntent": "mixed intent",
+  "primaryUserQuestion": "What is the Credit Guarantee Scheme (CGS) and how does it work for MSMEs?",
+  "secondaryUserQuestions": [
+    "Who is eligible for the Credit Guarantee Scheme?",
+    "How much credit guarantee is available under CGS?",
+    "What documents are required for the Credit Guarantee Scheme?"
+  ],
+  "seo": {
+    "metaTitle": "Credit Guarantee Scheme (CGS): Eligibility & Benefits",
+    "metaDescription": "Explore the Credit Guarantee Scheme (CGS) by MSME Ministry. Learn about CGTMSE, eligibility, credit limits, and how to apply for collateral-free loans.",
+    "slug": "cgtmse-scheme-2026",
+    "canonicalPath": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026",
+    "primaryKeyword": "Credit Guarantee Scheme (CGS)",
+    "secondaryKeywords": [
+      "CGTMSE",
+      "MSME credit guarantee",
+      "collateral-free loan",
+      "Micro and Small Enterprises",
+      "Ministry of MSME",
+      "credit guarantee fund",
+      "MSME loan scheme",
+      "small business financing",
+      "enterprise credit support",
+      "MSME financial assistance",
+      "credit guarantee trust",
+      "small enterprise loan",
+      "micro enterprise credit",
+      "business collateral waiver",
+      "MSME lending institutions",
+      "credit guarantee limits",
+      "enterprise financing India",
+      "MSME scheme benefits",
+      "credit guarantee application"
+    ],
+    "metaTitleCharacterCount": 53,
+    "metaDescriptionCharacterCount": 151
+  },
+  "article": {
+    "h1": "Credit Guarantee Scheme (CGS): Eligibility, Benefits & Application",
+    "snippetAnswer": "The Credit Guarantee Scheme (CGS) is an initiative by the Ministry of Micro, Small and Medium Enterprises (MSME) implemented by the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE). It provides collateral-free credit guarantees to micro and small enterprises, enabling them to access loans from banks and financial institutions without pledging physical assets.",
+    "detailedDescription": {
+      "introduction": "Accessing credit without collateral has historically been a significant barrier for micro and small enterprises in India. The Credit Guarantee Scheme (CGS) addresses this challenge by providing a safety net for lenders, thereby encouraging them to extend loans to smaller businesses. Administered by the Ministry of Micro, Small and Medium Enterprises (MSME) and implemented by the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE), the scheme aims to enhance financial inclusion and support the growth of the MSME sector.",
+      "schemeAtAGlance": {
+        "Scheme Name": "Credit Guarantee Scheme (CGS)",
+        "Ministry": "Ministry of Micro, Small and Medium Enterprises (MSME)",
+        "Implementing Agency": "Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE)",
+        "Target Beneficiaries": "Micro and Small Enterprises",
+        "Primary Benefit": "Collateral-free credit guarantee",
+        "Application Portal": "Not directly available (applied via lending institutions)"
+      },
+      "whatIsScheme": "The Credit Guarantee Scheme (CGS) is a government-backed initiative designed to facilitate credit access for micro and small enterprises. Under this scheme, the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE) provides a guarantee to banks and financial institutions for loans extended to eligible MSMEs. This guarantee covers a portion of the loan amount, reducing the risk for lenders and eliminating the need for borrowers to provide physical collateral.",
+      "objectives": "The primary objectives of the Credit Guarantee Scheme (CGS) include: 1) Enhancing credit availability for micro and small enterprises by removing the collateral barrier. 2) Encouraging banks and financial institutions to lend to the MSME sector. 3) Supporting the growth and sustainability of small businesses in India. 4) Promoting financial inclusion by ensuring that smaller enterprises have access to formal credit channels."
+    },
+    "keyBenefits": [
+      {
+        "title": "Collateral-Free Credit Access",
+        "description": "Enterprises can secure loans without pledging physical assets, as the CGTMSE provides a guarantee to the lending institution."
+      },
+      {
+        "title": "Enhanced Lender Confidence",
+        "description": "The government-backed guarantee reduces the perceived risk for banks and financial institutions, making them more willing to extend credit to MSMEs."
+      },
+      {
+        "title": "Support for Micro and Small Enterprises",
+        "description": "The scheme specifically targets micro and small enterprises, ensuring that smaller businesses have access to formal credit facilities."
+      },
+      {
+        "title": "Facilitated Business Growth",
+        "description": "By easing credit constraints, the scheme enables enterprises to invest in expansion, technology, and working capital, fostering overall business growth."
+      },
+      {
+        "title": "Promotion of Financial Inclusion",
+        "description": "The CGS helps integrate micro and small enterprises into the formal financial system, promoting broader economic participation and stability."
+      }
+    ],
+    "financialAssistance": [
+      {
+        "detail": "The scheme provides a credit guarantee to lending institutions for loans extended to eligible micro and small enterprises. Specific maximum project cost limits and subsidy structures are not detailed in the provided research data."
+      }
+    ],
+    "eligibility": [
+      {
+        "category": "Enterprise Size",
+        "criteria": "The enterprise must qualify as a micro or small enterprise as per the definitions set by the Ministry of Micro, Small and Medium Enterprises (MSME)."
+      },
+      {
+        "category": "Sector",
+        "criteria": "The enterprise must be engaged in manufacturing or service sectors, as per the scope of the Credit Guarantee Scheme (CGS)."
+      },
+      {
+        "category": "Credit History",
+        "criteria": "The enterprise should have a satisfactory credit history and be willing to comply with the lending institution's credit assessment criteria."
+      },
+      {
+        "category": "Legal Status",
+        "criteria": "The enterprise must be legally registered and in compliance with applicable laws and regulations."
+      },
+      {
+        "category": "Lender Approval",
+        "criteria": "The loan application must be approved by a participating bank or financial institution that is part of the CGTMSE network."
+      }
+    ],
+    "documentsRequired": [
+      {
+        "document": "Enterprise Registration Certificate",
+        "purpose": "To verify the legal status and classification of the enterprise as micro or small.",
+        "requirementStatus": "Mandatory"
+      },
+      {
+        "document": "PAN Card of the Enterprise/Proprietor",
+        "purpose": "For tax identification and verification of the applicant's identity.",
+        "requirementStatus": "Mandatory"
+      },
+      {
+        "document": "Bank Account Statement",
+        "purpose": "To assess the financial health and cash flow of the enterprise.",
+        "requirementStatus": "Mandatory"
+      },
+      {
+        "document": "Business Plan/Project Report",
+        "purpose": "To outline the purpose of the loan and the enterprise's growth strategy.",
+        "requirementStatus": "Mandatory"
+      },
+      {
+        "document": "Identity Proof of Proprietor/Partner",
+        "purpose": "To verify the identity of the individual(s) associated with the enterprise.",
+        "requirementStatus": "Mandatory"
+      }
+    ],
+    "applicationProcess": [
+      "Identify a participating bank or financial institution that offers loans under the Credit Guarantee Scheme (CGS).",
+      "Prepare the necessary business documents, including registration certificates, financial statements, and a detailed project report.",
+      "Submit the loan application to the chosen lending institution, clearly indicating the intent to avail the CGTMSE guarantee.",
+      "The lending institution will assess the creditworthiness of the enterprise and, if approved, initiate the process with the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE).",
+      "Upon approval by CGTMSE, the loan is disbursed by the lending institution, and the guarantee is activated."
+    ],
+    "importantDates": [],
+    "mistakesToAvoid": [
+      "Applying directly to CGTMSE without going through a participating lending institution.",
+      "Providing incomplete or inaccurate financial documents, which can delay the approval process.",
+      "Misclassifying the enterprise size, as eligibility is strictly based on micro and small enterprise definitions.",
+      "Ignoring the specific credit assessment criteria of the chosen bank or financial institution.",
+      "Failing to maintain a satisfactory credit history, which can impact the likelihood of loan approval."
+    ],
+    "limitations": [
+      "The scheme is limited to micro and small enterprises; large enterprises are not eligible.",
+      "The availability of the guarantee depends on the participation of the lending institution in the CGTMSE network.",
+      "Specific financial limits and subsidy structures are not detailed in the provided research, so applicants should verify current terms with their lender.",
+      "The application process is indirect, requiring coordination between the enterprise, the lending institution, and CGTMSE.",
+      "Eligibility is subject to the credit assessment and approval of the participating bank or financial institution."
+    ],
+    "conclusion": "The Credit Guarantee Scheme (CGS) is a vital initiative by the Ministry of Micro, Small and Medium Enterprises (MSME) that empowers micro and small enterprises by providing collateral-free credit access. Through the implementation by the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE), the scheme reduces lender risk and fosters business growth. For assistance with eligibility assessment, documentation or scheme application planning, you can consult Growthora.",
+    "faqs": [
+      {
+        "question": "What is the Credit Guarantee Scheme (CGS)?",
+        "answer": "The Credit Guarantee Scheme (CGS) is a government initiative by the Ministry of Micro, Small and Medium Enterprises (MSME) that provides collateral-free credit guarantees to micro and small enterprises through the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE)."
+      },
+      {
+        "question": "Who implements the Credit Guarantee Scheme (CGS)?",
+        "answer": "The scheme is implemented by the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE) under the aegis of the Ministry of Micro, Small and Medium Enterprises (MSME)."
+      },
+      {
+        "question": "Who is eligible for the Credit Guarantee Scheme (CGS)?",
+        "answer": "Micro and small enterprises, as defined by the Ministry of Micro, Small and Medium Enterprises (MSME), are eligible. The enterprise must be legally registered and approved by a participating lending institution."
+      },
+      {
+        "question": "How much credit guarantee is available under the CGS?",
+        "answer": "The specific maximum credit guarantee limits are not detailed in the provided research. Applicants should consult their participating lending institution or the CGTMSE guidelines for current limits."
+      },
+      {
+        "question": "Is the Credit Guarantee Scheme (CGS) a loan or a subsidy?",
+        "answer": "The CGS is not a direct loan or subsidy. It is a credit guarantee provided to lending institutions, enabling them to extend collateral-free loans to eligible micro and small enterprises."
+      },
+      {
+        "question": "What documents are required to apply for the CGS?",
+        "answer": "Typical documents include the enterprise registration certificate, PAN card, bank account statements, a business plan/project report, and identity proof of the proprietor or partner."
+      },
+      {
+        "question": "How do I apply for the Credit Guarantee Scheme (CGS)?",
+        "answer": "You must apply through a participating bank or financial institution. The lender will assess your creditworthiness and initiate the guarantee process with the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE)."
+      },
+      {
+        "question": "Is there a deadline to apply for the CGS?",
+        "answer": "The Credit Guarantee Scheme (CGS) is a continuous scheme, and there is no specific application deadline. However, terms and conditions may be updated periodically by the Ministry of Micro, Small and Medium Enterprises (MSME)."
+      },
+      {
+        "question": "Can existing businesses apply for the CGS?",
+        "answer": "Yes, existing micro and small enterprises can apply, provided they meet the eligibility criteria and are approved by a participating lending institution."
+      },
+      {
+        "question": "What are the major conditions for the CGS?",
+        "answer": "Key conditions include the enterprise being classified as micro or small, legal registration, satisfactory credit history, and approval by a participating bank or financial institution."
+      },
+      {
+        "question": "Does the CGS require collateral from the borrower?",
+        "answer": "No, the primary benefit of the Credit Guarantee Scheme (CGS) is that it allows micro and small enterprises to access loans without pledging physical collateral."
+      },
+      {
+        "question": "Which ministry oversees the Credit Guarantee Scheme (CGS)?",
+        "answer": "The Ministry of Micro, Small and Medium Enterprises (MSME) oversees the Credit Guarantee Scheme (CGS)."
+      },
+      {
+        "question": "Can large enterprises benefit from the CGS?",
+        "answer": "No, the Credit Guarantee Scheme (CGS) is specifically designed for micro and small enterprises. Large enterprises are not eligible."
+      },
+      {
+        "question": "How does the CGS help lenders?",
+        "answer": "The CGS reduces the risk for lenders by providing a government-backed guarantee, making them more willing to extend credit to micro and small enterprises."
+      },
+      {
+        "question": "Where can I find official information about the CGS?",
+        "answer": "Official information can be found on the websites of the Ministry of Micro, Small and Medium Enterprises (MSME) and the Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE)."
+      }
+    ],
+    "benefits": [],
+    "documents": {
+      "required": []
+    }
+  },
+  "internalLinkRecommendations": [
+    {
+      "anchorText": "MSME Loan Schemes",
+      "targetTopic": "List of MSME Loan Schemes in India",
+      "reason": "Users interested in the Credit Guarantee Scheme (CGS) may also want to explore other loan options available for micro and small enterprises."
+    },
+    {
+      "anchorText": "How to Register an MSME",
+      "targetTopic": "MSME Registration Process and Benefits",
+      "reason": "Eligibility for the CGS depends on MSME classification, so linking to registration guides is highly relevant."
+    },
+    {
+      "anchorText": "Business Loan Documentation",
+      "targetTopic": "Essential Documents for Business Loans",
+      "reason": "Provides additional context on the types of documents typically required for business financing."
+    }
+  ],
+  "externalSourceRecommendations": [
+    {
+      "title": "Revamping of Credit Guarantee Scheme for Micro & Small ...",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1912500",
+      "reason": "Official Press Information Bureau release detailing the revamping of the scheme."
+    },
+    {
+      "title": "CGTMSE%20guidelines.pdf",
+      "url": "https://www.dcmsme.gov.in/schemes/CGTMSE%20guidelines.pdf",
+      "reason": "Official guidelines document from the Department for Promotion of Industry and Internal Trade (DPIIT) or related MSME authority."
+    },
+    {
+      "title": "Shri Narayan Rane launches the revamped CGTMSE ...",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1920289",
+      "reason": "Official announcement regarding the launch of the revamped CGTMSE scheme."
+    }
+  ],
+  "schema": {
+    "schemaObject": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://growthora.co.in/#website",
+          "url": "https://growthora.co.in",
+          "name": "Growthora"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026#webpage",
+          "url": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026",
+          "name": "Credit Guarantee Scheme (CGS): Eligibility & Benefits",
+          "description": "Explore the Credit Guarantee Scheme (CGS) by MSME Ministry. Learn about CGTMSE, eligibility, credit limits, and how to apply for collateral-free loans.",
+          "isPartOf": {
+            "@id": "https://growthora.co.in/#website"
+          }
+        },
+        {
+          "@type": "Article",
+          "@id": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026#article",
+          "isPartOf": {
+            "@id": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026#webpage"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026#webpage"
+          },
+          "headline": "Credit Guarantee Scheme (CGS): Eligibility, Benefits & Application",
+          "description": "Explore the Credit Guarantee Scheme (CGS) by MSME Ministry. Learn about CGTMSE, eligibility, credit limits, and how to apply for collateral-free loans.",
+          "author": {
+            "@type": "Organization",
+            "name": "Growthora Editorial Team"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://growthora.co.in/#organization",
+            "name": "Growthora"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://growthora.co.in"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Schemes",
+              "item": "https://growthora.co.in/govtschemes"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Credit Guarantee Scheme (CGS): Eligibility, Benefits & Application",
+              "item": "https://growthora.co.in/govtschemes/cgtmse-scheme-2026"
+            }
+          ]
+        }
+      ]
+    },
+    "schemaScript": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"WebSite\",\n      \"@id\": \"https://growthora.co.in/#website\",\n      \"url\": \"https://growthora.co.in\",\n      \"name\": \"Growthora\"\n    },\n    {\n      \"@type\": \"WebPage\",\n      \"@id\": \"https://growthora.co.in/govtschemes/cgtmse-scheme-2026#webpage\",\n      \"url\": \"https://growthora.co.in/govtschemes/cgtmse-scheme-2026\",\n      \"name\": \"Credit Guarantee Scheme (CGS): Eligibility & Benefits\",\n      \"description\": \"Explore the Credit Guarantee Scheme (CGS) by MSME Ministry. Learn about CGTMSE, eligibility, credit limits, and how to apply for collateral-free loans.\",\n      \"isPartOf\": {\n        \"@id\": \"https://growthora.co.in/#website\"\n      }\n    },\n    {\n      \"@type\": \"Article\",\n      \"@id\": \"https://growthora.co.in/govtschemes/cgtmse-scheme-2026#article\",\n      \"isPartOf\": {\n        \"@id\": \"https://growthora.co.in/govtschemes/cgtmse-scheme-2026#webpage\"\n      },\n      \"mainEntityOfPage\": {\n        \"@id\": \"https://growthora.co.in/govtschemes/cgtmse-scheme-2026#webpage\"\n      },\n      \"headline\": \"Credit Guarantee Scheme (CGS): Eligibility, Benefits & Application\",\n      \"description\": \"Explore the Credit Guarantee Scheme (CGS) by MSME Ministry. Learn about CGTMSE, eligibility, credit limits, and how to apply for collateral-free loans.\",\n      \"author\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Growthora Editorial Team\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"@id\": \"https://growthora.co.in/#organization\",\n        \"name\": \"Growthora\"\n      }\n    },\n    {\n      \"@type\": \"BreadcrumbList\",\n      \"@id\": \"https://growthora.co.in/govtschemes/cgtmse-scheme-2026#breadcrumb\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://growthora.co.in\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Schemes\",\n          \"item\": \"https://growthora.co.in/govtschemes\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Credit Guarantee Scheme (CGS): Eligibility, Benefits & Application\",\n          \"item\": \"https://growthora.co.in/govtschemes/cgtmse-scheme-2026\"\n        }\n      ]\n    }\n  ]\n}\n</script>"
+  },
+  "sources": [
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_n98c05s",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Revamping of Credit Guarantee Scheme for Micro & Small ...",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1912500"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 100,
+      "domain": "www.dcmsme.gov.in",
+      "id": "src_ggcky4d",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "CGTMSE%20guidelines.pdf",
+      "url": "https://www.dcmsme.gov.in/schemes/CGTMSE%20guidelines.pdf"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_aqq30aj",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Shri Narayan Rane launches the revamped CGTMSE ...",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1920289"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_dfubiy5",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Press Release Page | Press Information Bureau",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2199257&reg=3&lang=1"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 100,
+      "domain": "www.mofpi.gov.in",
+      "id": "src_qv07u2k",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "Guidelines PDF",
+      "url": "https://www.mofpi.gov.in/sites/default/files/pmfme_guidelines_english.pdf"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_gwn56u2",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Significant growth in credit disbursement to MSME sector ...",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2240590&reg=3&lang=1"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 90,
+      "domain": "startupharyana.gov.in",
+      "id": "src_8f71l53",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "CREDIT GUARANTEE FUND SCHEME FOR MICRO AND ...",
+      "url": "https://startupharyana.gov.in/download-secure/eyJpdiI6Ii9sckxTTkdESWxSem4rK1pSaFFiN3c9PSIsInZhbHVlIjoiMTY2b3M1NDJCRk80WG1xQy9MS1FQTS9rVVM0cENydGdiNmw2enRwY3cxemNLK1h0OXdlN0xNU2NxaE1ycG5OSlNVNmgwSExNZWFqN3lVWWxXRldWQnc5MG93b0NvSFpqWE9pY1dEa3RHem89IiwibWFjIjoiNjlkMDI3OTNhZTA4Nzc1Yjc3NmMwZGM0YjM4OGI5OWNlYWI4OWE2NWE1ZGYzOTc0N2U2MmY3ODc3MzNmODJjZSIsInRhZyI6IiJ9/CREDIT%20GUARANTEE%20FUND%20SCHEME%20FOR%20MICRO%20AND%20SMALL%20ENTERPRISES"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 90,
+      "domain": "dsiidc.delhi.gov.in",
+      "id": "src_myls8wz",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "CGTMSE - DCGS",
+      "url": "https://dsiidc.delhi.gov.in/cgtmse-dcgs"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 90,
+      "domain": "champions.gov.in",
+      "id": "src_gapwep4",
+      "retrievedAt": null,
+      "sourceType": "faq",
+      "title": "Questions",
+      "url": "https://champions.gov.in/Ministry-of-MSME/skills,loan,credit_guarantee,PM-atmnirbhar-Economic-Package,eligibility_criteria,guidelines_Schemes/query_questions_FAQs.htm"
+    },
+    {
+      "authorityLevel": "commercial",
+      "authorityScore": 30,
+      "domain": "www.tatacapital.com",
+      "id": "src_q2hppb8",
+      "retrievedAt": null,
+      "sourceType": "blog",
+      "title": "CGTMSE Scheme: Full Form, Eligibility & Credit Guarantee",
+      "url": "https://www.tatacapital.com/blog/loan-for-business/cgtmse-scheme-full-form-features-and-eligibility"
+    },
+    {
+      "authorityLevel": "commercial",
+      "authorityScore": 30,
+      "domain": "www.linkedin.com",
+      "id": "src_hesmcbz",
+      "retrievedAt": null,
+      "sourceType": "blog",
+      "title": "CGTMSE Scheme Eligibility and Application",
+      "url": "https://www.linkedin.com/pulse/complete-guide-cgtmse-scheme-eligibility-application-ajvaemsme-rnrrf"
+    },
+    {
+      "authorityLevel": "commercial",
+      "authorityScore": 30,
+      "domain": "udyogplus.adityabirlacapital.com",
+      "id": "src_710u1hh",
+      "retrievedAt": null,
+      "sourceType": "blog",
+      "title": "Complete Guide to Applying for the CGTMSE Scheme",
+      "url": "https://udyogplus.adityabirlacapital.com/blogs/cgtmse-scheme"
+    }
+  ],
+  "audit": {
+    "passed": false,
+    "score": 95,
+    "categoryScores": {
+      "seo": 100,
+      "aeo": 100,
+      "geo": 90,
+      "eeat": 80,
+      "contentQuality": 100,
+      "searchIntent": 100
+    },
+    "checks": [
+      "SEO: H1 is present",
+      "SEO: Metadata lengths are within limits",
+      "SEO: Primary keyword used naturally in H1 and Snippet",
+      "AEO: Snippet length is optimal (55 words)",
+      "AEO: Exactly 15 FAQs present",
+      "AEO: Application process is present and formatted",
+      "GEO: Scheme entities supported by sources",
+      "GEO: Strong critical fact coverage (100%)",
+      "Content Quality: detailedDescription is present",
+      "Content Quality: At least 5 keyBenefits present (5)",
+      "Content Quality: At least 5 eligibility items present (5)",
+      "Content Quality: At least 5 documentsRequired items present (5)",
+      "Content Quality: No obvious AI cliches detected",
+      "Search Intent: Analyzed and captured (mixed intent)"
+    ],
+    "warnings": [
+      "GEO: Scheme at a Glance might be missing key entity relationships",
+      "EEAT: Factual sections may lack sourceIds"
+    ],
+    "failures": [
+      "EEAT FactGuard: Unsupported number/percentage/amount detected: 4"
+    ]
+  },
+  "humanReview": [
+    "FactGuard detected unsupported facts. Review audit failures."
+  ],
+  "issuesRequiringVerification": [
+    "The exact financial assistance limits (max project cost for manufacturing and service sectors) are missing from the research data.",
+    "The specific application portal URL is not available in the research data.",
+    "Detailed eligibility criteria such as age limits and education requirements are not specified in the research data."
+  ],
+  "criticalFactCoverage": {
+    "requiredCriticalFacts": 6,
+    "extractedCriticalFacts": 6,
+    "sourceSupportedCriticalFacts": 6,
+    "coveragePercent": 100
+  },
+  "timingMetrics": {
+    "tavilyResearchMs": 6394,
+    "sourceFilteringMs": 5,
+    "evidenceExtractionMs": 0,
+    "normalizationMs": 5084,
+    "verificationMs": 0,
+    "contentGenerationMs": 10180,
+    "factGuardMs": 3,
+    "auditMs": 0,
+    "docxMs": 0,
+    "sanityPreviewMs": 0,
+    "totalMs": 22074
+  },
+  "sourceTrace": {
+    "withSource": [
+      "scheme.name",
+      "scheme.ministry",
+      "scheme.implementingAgency",
+      "scheme.officialDigitalSource",
+      "scheme.status",
+      "financialAssistance.loanCategories"
+    ],
+    "withoutSource": [],
+    "nullFields": []
+  },
+  "publishReadiness": "blocked"
+}

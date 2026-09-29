@@ -1,0 +1,180 @@
+{
+  "researchId": "res_f1kgbdbt",
+  "schemeSlug": "mudra-loan-scheme-2026",
+  "slug": "mudra-loan-scheme-2026",
+  "scheme": {
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "officialWebsite": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2068019",
+    "applicationPortalAvailable": true,
+    "status": "Active / Ongoing",
+    "statusSupportedBy": [
+      "src_97anp73"
+    ],
+    "sourceIds": [
+      "src_97anp73",
+      "src_z7iczwl"
+    ],
+    "ministry": {
+      "officialName": "Ministry of Finance, Government of India",
+      "supportedBy": [
+        "src_97anp73"
+      ],
+      "verifiedAliases": [
+        "Ministry of Finance"
+      ]
+    },
+    "implementingAgency": {
+      "officialName": "Member Lending Institutions (Commercial Banks, RRBs, SFBs, MFIs, NBFCs) / MUDRA SIDBI",
+      "supportedBy": [
+        "src_97anp73"
+      ],
+      "verifiedAliases": [
+        "MUDRA",
+        "SIDBI"
+      ]
+    }
+  },
+  "financialAssistance": {
+    "loanCategories": "Shishu (up to ₹50,000), Kishore (₹50,000 to ₹5 Lakh), Tarun (₹5 Lakh to ₹10 Lakh), Tarun Plus (₹10 Lakh to ₹20 Lakh)",
+    "loanCategoriesSupportedBy": [
+      "src_97anp73"
+    ],
+    "maxProjectCost": {
+      "manufacturing": {
+        "value": null,
+        "supportedBy": []
+      },
+      "service": {
+        "value": null,
+        "supportedBy": []
+      }
+    },
+    "subsidyStructure": []
+  },
+  "eligibility": {
+    "targetBeneficiary": {
+      "value": "Any Indian citizen with a business plan for a non-farm income generating micro-enterprise in manufacturing, trading, or service sector",
+      "supportedBy": [
+        "src_97anp73",
+        "src_z7iczwl"
+      ]
+    },
+    "enterpriseTypes": {
+      "value": "Sole proprietorships, partnerships, small manufacturing units, service sector units, shopkeepers, artisans, and micro businesses",
+      "supportedBy": [
+        "src_97anp73"
+      ]
+    },
+    "loanCategories": {
+      "value": "Credit requirement up to ₹20 Lakh across Shishu, Kishore, Tarun, and Tarun Plus categories",
+      "supportedBy": [
+        "src_97anp73"
+      ]
+    },
+    "creditHistory": {
+      "value": "Applicant must not be a defaulter to any bank or financial institution and must have a satisfactory credit record",
+      "supportedBy": [
+        "src_97anp73"
+      ]
+    },
+    "noCollateral": {
+      "value": "Collateral-free credit support without third-party guarantee",
+      "supportedBy": [
+        "src_97anp73"
+      ]
+    }
+  },
+  "documents": [
+    "Proof of Identity (Self-attested Aadhaar Card, Voter ID, PAN Card, Passport, or Driving License)",
+    "Proof of Residence (Recent utility bill, Aadhaar Card, Voter ID, or Bank Statement)",
+    "2 recent passport-size photographs of the applicant / partners / directors",
+    "Proof of Business Identity and Address (Business registration certificate, Udyam registration, or trade license)",
+    "Financial & Bank Documents (Bank statement for last 6 months, equipment quotations, and business proposal for Kishore, Tarun & Tarun Plus)"
+  ],
+  "documentsSupportedBy": [
+    "src_97anp73",
+    "src_z7iczwl"
+  ],
+  "applicationProcess": {
+    "type": "Online / Offline via Member Lending Institutions",
+    "steps": [
+      "Select loan category (Shishu, Kishore, Tarun, Tarun Plus)",
+      "Fill application form online via Member Lending Institution portals or offline at commercial bank branches",
+      "Submit business plan and required documents"
+    ],
+    "sourceIds": [
+      "src_97anp73"
+    ]
+  },
+  "importantDates": {
+    "applicationDeadline": null
+  },
+  "sources": [
+    {
+      "id": "src_97anp73",
+      "title": "Loan limit under Pradhan Mantri Mudra Yojana (PMMY) ...",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2068019",
+      "domain": "www.pib.gov.in",
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "retrievedAt": "2026-09-28T06:53:22.662Z"
+    },
+    {
+      "id": "src_z7iczwl",
+      "title": "Pradhan Mantri Mudra Yojana",
+      "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2069170",
+      "domain": "www.pib.gov.in",
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "retrievedAt": "2026-09-28T06:53:22.662Z"
+    }
+  ],
+  "verification": {
+    "officialSourcesFound": 8
+  },
+  "preliminaryCriticalFactCoverage": {
+    "schemeType": "LOAN",
+    "applicableTotal": 6,
+    "supportedApplicable": 6,
+    "unresolvedApplicable": 0,
+    "notApplicable": 6,
+    "coveragePercent": 100,
+    "nullCriticalFields": [],
+    "criticalFactsWithoutSource": [],
+    "criticalFactsWithSource": [
+      "scheme.name",
+      "scheme.ministry",
+      "scheme.implementingAgency",
+      "scheme.officialDigitalSource",
+      "scheme.status",
+      "financialAssistance.loanCategories"
+    ],
+    "notApplicableFields": [
+      "financialAssistance.maxProjectCost.manufacturing",
+      "financialAssistance.maxProjectCost.service",
+      "financialAssistance.subsidyDetails",
+      "financialAssistance.beneficiaryContribution",
+      "eligibility.ageLimit",
+      "eligibility.educationRequirement"
+    ],
+    "requiredCriticalFacts": 6,
+    "extractedCriticalFacts": 6,
+    "sourceSupportedCriticalFacts": 6
+  },
+  "provider": "tavily_groq",
+  "mode": "free_live_test",
+  "liveModelCalls": true,
+  "liveWebResearch": true,
+  "stats": {
+    "officialSourcesFound": 8,
+    "secondarySourcesFound": 4,
+    "sourcesRejected": 5,
+    "conflictsFound": 0,
+    "conflictsResolved": 0,
+    "needsHumanReview": [],
+    "tavilyCalls": 0,
+    "groqExtractionCalls": 0,
+    "groqNormalizationCalls": 0,
+    "groqBrowserSearchCalls": 0
+  }
+}

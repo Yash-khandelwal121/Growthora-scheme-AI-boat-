@@ -1,0 +1,119 @@
+{
+  "scheme": {
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "status": {
+      "value": null,
+      "supportedBy": [],
+      "evidence": ""
+    },
+    "applicationPortalAvailable": {
+      "value": true,
+      "supportedBy": [
+        "src_l763ywr"
+      ],
+      "evidence": "Entire process of application to sanction and release of funds by banks is online through the portal."
+    },
+    "ministry": {
+      "officialName": "Ministry of Micro, Small & Medium Enterprises",
+      "verifiedAliases": [
+        "MSME"
+      ],
+      "supportedBy": [
+        "src_o4314je",
+        "src_4knawy1"
+      ]
+    },
+    "implementingAgency": {
+      "officialName": "Udyog Bhawan, New Delhi",
+      "verifiedAliases": [],
+      "supportedBy": [
+        "src_o4314je"
+      ]
+    },
+    "officialWebsite": "https://pmegp.msme.gov.in",
+    "sourceIds": [
+      "src_o4314je",
+      "src_4knawy1",
+      "src_l763ywr",
+      "src_wzdv0xh",
+      "src_ln77t3l"
+    ]
+  },
+  "financialAssistance": {
+    "maxProjectCost": {
+      "manufacturing": {
+        "value": null,
+        "supportedBy": [],
+        "evidence": ""
+      },
+      "service": {
+        "value": null,
+        "supportedBy": [],
+        "evidence": ""
+      }
+    },
+    "subsidyStructure": [
+      {
+        "beneficiaryCategory": "General Category",
+        "contribution": "10%",
+        "urbanSubsidy": "15%",
+        "ruralSubsidy": "25%",
+        "supportedBy": [
+          "src_rqucq3l"
+        ],
+        "evidence": "Beneficiary’s contribution (of project cost) 10%; Rate of Subsidy (of project cost) 15% urban, 25% rural"
+      }
+    ]
+  },
+  "eligibility": {
+    "ageLimit": {
+      "value": "18 years",
+      "supportedBy": [
+        "src_wzdv0xh",
+        "src_ln77t3l"
+      ],
+      "evidence": "Any individual, above 18 years of age."
+    },
+    "educationRequirement": {
+      "value": null,
+      "supportedBy": [],
+      "evidence": ""
+    }
+  },
+  "documents": [],
+  "applicationProcess": {
+    "type": "online portal",
+    "steps": [],
+    "sourceIds": [
+      "src_l763ywr"
+    ]
+  },
+  "importantDates": {
+    "applicationDeadline": null
+  },
+  "sources": [
+    "src_o4314je",
+    "src_4knawy1",
+    "src_l763ywr",
+    "src_wzdv0xh",
+    "src_ln77t3l",
+    "src_rqucq3l"
+  ],
+  "conflictLog": [],
+  "provider": "tavily_groq",
+  "mode": "free_live_test",
+  "liveModelCalls": true,
+  "liveWebResearch": true,
+  "researchId": "res_mnes1tkj",
+  "stats": {
+    "officialSourcesFound": 7,
+    "secondarySourcesFound": 1,
+    "sourcesRejected": 3,
+    "conflictsFound": 0,
+    "conflictsResolved": 0,
+    "needsHumanReview": [],
+    "tavilyCalls": 4,
+    "groqNormalizationCalls": 1,
+    "groqBrowserSearchCalls": 0
+  }
+}

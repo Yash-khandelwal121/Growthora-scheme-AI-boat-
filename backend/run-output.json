@@ -1,0 +1,883 @@
+{
+  "FINAL_STATUS": "PASS",
+  "Research_calls_made": 0,
+  "Tavily_calls_made": 0,
+  "Groq_content_model_used": "openai/gpt-oss-20b",
+  "Fallback_used": "YES",
+  "FactGuard_failures": 0,
+  "CriticalFactCoverage": 100,
+  "Audit_score": 99,
+  "publishReadiness": "ready",
+  "Benefits_count": 5,
+  "Benefits_unique": "YES",
+  "Eligibility_count": 5,
+  "Eligibility_unique": "YES",
+  "Documents_count": 5,
+  "Documents_unique": "YES",
+  "FAQ_count": 15,
+  "SEO_keyword_count": 20,
+  "SEO_keywords_unique": "YES",
+  "Placeholder_keywords_found": "NO",
+  "DOCX_result": "PASS",
+  "Sanity_Preview_result": "PASS",
+  "Sanity_mutations": 0,
+  "ACTUAL_DATA": {
+    "shortDescription": "The Prime Minister's Employment Generation Programme (PMEGP) is an active government scheme offering up to 35% subsidy for new micro-enterprises. The maximum project cost is Rs. 50 lakh for manufacturing and Rs. 20 lakh for services. Applications are processed through the official portal at pmegp.msme.gov.in.",
+    "benefits": [
+      "Credit-Linked Subsidy: Beneficiaries receive a subsidy ranging from 15% to 35% of the project cost, depending on their category and location (urban or rural).",
+      "Enhanced Project Cost Limits: The maximum project cost has been increased to Rs. 50 lakh for manufacturing and Rs. 20 lakh for service sectors, allowing for larger-scale ventures.",
+      "Higher Subsidy for Special Categories: Special category beneficiaries, including SC/ST, OBC, minorities, women, ex-servicemen, and physically handicapped individuals, receive a higher subsidy of up to 35% in rural areas.",
+      "Support for New Micro-Enterprises: The scheme is specifically designed for setting up new micro-enterprises, providing a structured pathway for first-time entrepreneurs.",
+      "Online Application Process: Applications can be submitted through the official portal at pmegp.msme.gov.in, making the process more accessible and transparent."
+    ],
+    "eligibility": [
+      "Age: Applicants must be above 18 years of age.",
+      "New Enterprise: The scheme is only for new micro-enterprises. Existing units or those that have already availed government subsidy under other schemes are not eligible.",
+      "Education: For manufacturing projects above Rs. 10 lakh and service/business projects above Rs. 5 lakh, the beneficiary must have passed VIII standard.",
+      "Sector: The project must be in the manufacturing or service sector.",
+      "Location: The project can be set up in either urban or rural areas, with different subsidy rates applicable."
+    ],
+    "documents": [
+      "Aadhaar Card or Alternative Identification",
+      "Project Report",
+      "Education Certificate",
+      "Caste / Special Category Certificate",
+      "Rural Area Certificate"
+    ],
+    "faqs": [
+      {
+        "question": "What is the PMEGP scheme?",
+        "answer": "PMEGP is a credit-linked subsidy scheme by the Ministry of Micro, Small & Medium Enterprises to promote self-employment and generate new micro-enterprises."
+      },
+      {
+        "question": "Who is eligible for the PMEGP scheme?",
+        "answer": "Individuals above 18 years of age who are setting up a new micro-enterprise in the manufacturing or service sector are eligible."
+      },
+      {
+        "question": "What is the maximum project cost for PMEGP?",
+        "answer": "The maximum project cost is Rs. 50 lakh for manufacturing and Rs. 20 lakh for service sectors."
+      },
+      {
+        "question": "What is the subsidy percentage for PMEGP?",
+        "answer": "The subsidy ranges from 15% to 35%, depending on the beneficiary category (general or special) and location (urban or rural)."
+      },
+      {
+        "question": "How do I apply for the PMEGP scheme?",
+        "answer": "You can apply online through the official portal at pmegp.msme.gov.in by registering, filling the form, and uploading required documents."
+      }
+    ],
+    "conclusion": "The PMEGP Scheme 2026 offers a robust framework for individuals looking to start a new micro-enterprise in India. With enhanced project cost limits and a structured subsidy system, it provides significant financial support to both general and special category beneficiaries. By understanding the eligibility criteria, required documents, and application process, you can maximize your chances of success. For assistance with eligibility assessment, documentation or scheme application planning, you can consult Growthora.",
+    "seoTitle": "PMEGP Scheme 2026: Eligibility, Subsidy & Application",
+    "seoDescription": "Explore PMEGP Scheme 2026. Learn about up to 35% subsidy, Rs. 50 lakh manufacturing & Rs. 20 lakh service limits, eligibility, and application process.",
+    "keywords": [
+      "PMEGP Scheme 2026",
+      "PMEGP subsidy",
+      "PMEGP eligibility",
+      "PMEGP application",
+      "PMEGP documents",
+      "PMEGP portal",
+      "PMEGP guidelines",
+      "PMEGP manufacturing limit",
+      "PMEGP service limit",
+      "PMEGP special category",
+      "PMEGP general category",
+      "PMEGP rural subsidy",
+      "PMEGP urban subsidy",
+      "PMEGP project report",
+      "PMEGP KVIC",
+      "PMEGP MSME",
+      "PMEGP new enterprise",
+      "PMEGP beneficiary contribution",
+      "PMEGP education requirement",
+      "PMEGP scheme benefits"
+    ],
+    "slug": "pmegp-scheme-2026",
+    "canonical": "https://growthora.co.in/govtschemes/pmegp-scheme-2026",
+    "fin_manufacturing": "Maximum project cost for manufacturing sector: Rs. 50 lakh.",
+    "fin_service": "Maximum project cost for service sector: Rs. 20 lakh.",
+    "fin_gen": {
+      "beneficiaryCategory": "General Category",
+      "contribution": "10%",
+      "urbanSubsidy": "15%",
+      "ruralSubsidy": "25%",
+      "supportedBy": [
+        "src_bw5caru"
+      ],
+      "evidence": "Table shows General Category: Beneficiary contribution 10%, Urban subsidy 15%, Rural subsidy 25%."
+    },
+    "fin_spec": {
+      "beneficiaryCategory": "Special Category (including SC/ST/OBC/Minorities/Women, Ex-servicemen, Physically handicapped)",
+      "contribution": "5%",
+      "urbanSubsidy": "25%",
+      "ruralSubsidy": "35%",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ],
+      "evidence": "Official KVIC guidelines specify 5% contribution and 25% (urban) / 35% (rural) subsidy for special categories."
+    },
+    "sources": [
+      "src_hrrjvmt",
+      "src_q6jzygw",
+      "src_616x9gb",
+      "src_146w9me",
+      "src_eks3jma",
+      "src_dxjeil5",
+      "src_bw5caru",
+      "src_v9kf7v8",
+      "src_iyg7exv",
+      "src_tcysnfy",
+      {
+        "id": "src_official_kvic_1790572459771",
+        "title": "PMEGP Guidelines & Subsidy Structure",
+        "url": "https://www.kviconline.gov.in/pmegpeportal/pmegpweb/docs/pmegp_guidelines.pdf",
+        "domain": "kviconline.gov.in",
+        "authorityLevel": "official",
+        "authorityScore": 100
+      }
+    ]
+  },
+  "sanitySchemaCheck": {
+    "payload": {
+      "_id": "drafts.scheme-pmegp-scheme-2026",
+      "_type": "schemePage",
+      "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+      "slug": {
+        "_type": "slug",
+        "current": "pmegp-scheme-2026"
+      },
+      "shortDescription": "The Prime Minister's Employment Generation Programme (PMEGP) is an active government scheme offering up to 35% subsidy for new micro-enterprises. The maximum project cost is Rs. 50 lakh for manufacturing and Rs. 20 lakh for services. Applications are processed through the official portal at pmegp.msme.gov.in.",
+      "seoTitle": "PMEGP Scheme 2026: Eligibility, Subsidy & Application",
+      "seoDescription": "Explore PMEGP Scheme 2026. Learn about up to 35% subsidy, Rs. 50 lakh manufacturing & Rs. 20 lakh service limits, eligibility, and application process.",
+      "seoKeywords": "PMEGP Scheme 2026, PMEGP subsidy, PMEGP eligibility, PMEGP application, PMEGP documents, PMEGP portal, PMEGP guidelines, PMEGP manufacturing limit, PMEGP service limit, PMEGP special category, PMEGP general category, PMEGP rural subsidy, PMEGP urban subsidy, PMEGP project report, PMEGP KVIC, PMEGP MSME, PMEGP new enterprise, PMEGP beneficiary contribution, PMEGP education requirement, PMEGP scheme benefits",
+      "category": {
+        "_type": "reference",
+        "_ref": "mock-category-id"
+      },
+      "detailedDescription": [
+        {
+          "_type": "block",
+          "_key": "x19uy63",
+          "style": "h2",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "2lsu1ps",
+              "text": "Introduction",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "7dg8z6f",
+          "style": "normal",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "bhdd4o2",
+              "text": "The Prime Minister's Employment Generation Programme (PMEGP) is a flagship initiative designed to promote self-employment and generate new micro-enterprises across India. Administered by the Ministry of Micro, Small & Medium Enterprises (MSME), the scheme provides financial assistance in the form of a credit-linked subsidy to individuals looking to start a new business. With updated guidelines, the scheme now offers enhanced project cost limits and a structured subsidy framework to support both general and special category beneficiaries.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "dxd1262",
+          "style": "h2",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "5yibz1y",
+              "text": "What Is the Scheme?",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "5zfyeb3",
+          "style": "normal",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "12z86jm",
+              "text": "PMEGP is a credit-linked subsidy scheme aimed at promoting self-employment and generating new micro-enterprises. It provides financial assistance to individuals who wish to set up a new business in the manufacturing or service sector. The scheme is implemented through the Ministry of Micro, Small & Medium Enterprises and is accessible via the official portal at pmegp.msme.gov.in.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "ogspl56",
+          "style": "h2",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "fmqnj01",
+              "text": "Financial Assistance",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "l4xzk5d",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "g5h52hv",
+              "text": "detail: Maximum project cost for manufacturing sector: Rs. 50 lakh.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "yfwd7ia",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "lpkeuzn",
+              "text": "detail: Maximum project cost for service sector: Rs. 20 lakh.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "5qbnueg",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "ot7f0yr",
+              "text": "detail: General Category: 10% beneficiary contribution, 15% urban subsidy, 25% rural subsidy.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "9lhlzet",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "dcua6xk",
+              "text": "detail: Special Category (SC/ST/OBC/Minorities/Women, Ex-servicemen, Physically handicapped): 5% beneficiary contribution, 25% urban subsidy, 35% rural subsidy.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "6p29t6e",
+          "style": "h2",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "2vw7y1v",
+              "text": "Application Process",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "snpsoe3",
+          "style": "normal",
+          "listItem": "number",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "fo0tl37",
+              "text": "Visit the official PMEGP portal at pmegp.msme.gov.in.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "2rvqqqy",
+          "style": "normal",
+          "listItem": "number",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "xbeyxkz",
+              "text": "Register on the portal using your Aadhaar number or alternative identification.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "snkxj6p",
+          "style": "normal",
+          "listItem": "number",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "5vb4orn",
+              "text": "Fill in the application form with your personal and project details.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "to0vzzx",
+          "style": "normal",
+          "listItem": "number",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "4bnqb77",
+              "text": "Upload the required documents, including the project report and identification proof.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "2jxdjnw",
+          "style": "normal",
+          "listItem": "number",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "x4nuj1m",
+              "text": "Submit the application and track its status on the portal.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "9b6xwnz",
+          "style": "h2",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "efr1p3b",
+              "text": "Important Dates",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "4omgabd",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "0g8mlav",
+              "text": "event: Scheme Status | date: Active",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "h0dy0j3",
+          "style": "h2",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "c0j7vt0",
+              "text": "Mistakes to Avoid",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "xn6jdce",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "s39o3j5",
+              "text": "Applying with an existing business or one that has already received government subsidy.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "ur55qct",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "48d2psb",
+              "text": "Submitting an incomplete or inaccurate project report.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "l9jmhfp",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "dpf2tqb",
+              "text": "Failing to provide the required education certificate for higher project costs.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "sdqtka7",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "9b1fbiw",
+              "text": "Not verifying the correct subsidy category (general vs. special) and location (urban vs. rural).",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "salz6mi",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "j5rhul9",
+              "text": "Missing the mandatory Aadhaar or alternative identification document.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "b2wo3ua",
+          "style": "h2",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "qv5w84x",
+              "text": "Conclusion",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "ai2r6wd",
+          "style": "normal",
+          "children": [
+            {
+              "_type": "span",
+              "_key": "0asbyli",
+              "text": "The PMEGP Scheme 2026 offers a robust framework for individuals looking to start a new micro-enterprise in India. With enhanced project cost limits and a structured subsidy system, it provides significant financial support to both general and special category beneficiaries. By understanding the eligibility criteria, required documents, and application process, you can maximize your chances of success. For assistance with eligibility assessment, documentation or scheme application planning, you can consult Growthora.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        }
+      ],
+      "benefits": [
+        {
+          "_type": "block",
+          "_key": "kb6kk5d",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "nu4mlih",
+              "text": "**Credit-Linked Subsidy**: Beneficiaries receive a subsidy ranging from 15% to 35% of the project cost, depending on their category and location (urban or rural).",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "t0mrd1a",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "x6oxfba",
+              "text": "**Enhanced Project Cost Limits**: The maximum project cost has been increased to Rs. 50 lakh for manufacturing and Rs. 20 lakh for service sectors, allowing for larger-scale ventures.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "erjg0zz",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "o4hyc9u",
+              "text": "**Higher Subsidy for Special Categories**: Special category beneficiaries, including SC/ST, OBC, minorities, women, ex-servicemen, and physically handicapped individuals, receive a higher subsidy of up to 35% in rural areas.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "o9aelk3",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "dyw1kf0",
+              "text": "**Support for New Micro-Enterprises**: The scheme is specifically designed for setting up new micro-enterprises, providing a structured pathway for first-time entrepreneurs.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "35hc1ru",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "042hu95",
+              "text": "**Online Application Process**: Applications can be submitted through the official portal at pmegp.msme.gov.in, making the process more accessible and transparent.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        }
+      ],
+      "eligibility": [
+        {
+          "_type": "block",
+          "_key": "p19p511",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "d9su77l",
+              "text": "Age: Applicants must be above 18 years of age.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "a23zfwi",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "agdk43m",
+              "text": "New Enterprise: The scheme is only for new micro-enterprises. Existing units or those that have already availed government subsidy under other schemes are not eligible.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "ky8n6p0",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "e50m6uj",
+              "text": "Education: For manufacturing projects above Rs. 10 lakh and service/business projects above Rs. 5 lakh, the beneficiary must have passed VIII standard.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "kutm6dj",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "1xw65vi",
+              "text": "Sector: The project must be in the manufacturing or service sector.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "4hwqkm4",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "cj11qo1",
+              "text": "Location: The project can be set up in either urban or rural areas, with different subsidy rates applicable.",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        }
+      ],
+      "documentsRequired": [
+        {
+          "_type": "block",
+          "_key": "4nhr3zh",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "i3geg19",
+              "text": "Aadhaar Card or Alternative Identification\nPurpose: Identity verification\nStatus: Mandatory",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "7uysjcp",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "9tcm3ax",
+              "text": "Project Report\nPurpose: Detailed business plan and financial projections\nStatus: Mandatory",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "v24vy3x",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "26men4d",
+              "text": "Education Certificate\nPurpose: Proof of educational qualification (for higher project costs)\nStatus: Where applicable",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "fy51rhx",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "hv3hu1v",
+              "text": "Caste / Special Category Certificate\nPurpose: Proof of special category status for higher subsidy\nStatus: Where applicable",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        },
+        {
+          "_type": "block",
+          "_key": "shtdtgn",
+          "style": "normal",
+          "listItem": "bullet",
+          "level": 1,
+          "children": [
+            {
+              "_type": "span",
+              "_key": "0xwy44p",
+              "text": "Rural Area Certificate\nPurpose: Proof of rural location for higher subsidy\nStatus: Where applicable",
+              "marks": []
+            }
+          ],
+          "markDefs": []
+        }
+      ],
+      "faqs": [
+        {
+          "_key": "zj7j3ee",
+          "question": "What is the PMEGP scheme?",
+          "answer": "PMEGP is a credit-linked subsidy scheme by the Ministry of Micro, Small & Medium Enterprises to promote self-employment and generate new micro-enterprises."
+        },
+        {
+          "_key": "pf8tp90",
+          "question": "Who is eligible for the PMEGP scheme?",
+          "answer": "Individuals above 18 years of age who are setting up a new micro-enterprise in the manufacturing or service sector are eligible."
+        },
+        {
+          "_key": "7ouerr1",
+          "question": "What is the maximum project cost for PMEGP?",
+          "answer": "The maximum project cost is Rs. 50 lakh for manufacturing and Rs. 20 lakh for service sectors."
+        },
+        {
+          "_key": "unfu013",
+          "question": "What is the subsidy percentage for PMEGP?",
+          "answer": "The subsidy ranges from 15% to 35%, depending on the beneficiary category (general or special) and location (urban or rural)."
+        },
+        {
+          "_key": "twbgqcl",
+          "question": "How do I apply for the PMEGP scheme?",
+          "answer": "You can apply online through the official portal at pmegp.msme.gov.in by registering, filling the form, and uploading required documents."
+        },
+        {
+          "_key": "rko7z46",
+          "question": "What documents are required for PMEGP?",
+          "answer": "Mandatory documents include Aadhaar Card, Project Report, and Education Certificate (for higher project costs). Special Category and Rural Area certificates are required where applicable."
+        },
+        {
+          "_key": "keixktw",
+          "question": "Is PMEGP for existing businesses?",
+          "answer": "No, PMEGP is only for new micro-enterprises. Existing units or those that have already availed government subsidy are not eligible."
+        },
+        {
+          "_key": "jud0yzi",
+          "question": "What is the education requirement for PMEGP?",
+          "answer": "For manufacturing projects above Rs. 10 lakh and service projects above Rs. 5 lakh, the beneficiary must have passed VIII standard."
+        },
+        {
+          "_key": "e6raa7v",
+          "question": "Who implements the PMEGP scheme?",
+          "answer": "The scheme is implemented by the Ministry of Micro, Small & Medium Enterprises (MSME) and is accessible via the official portal at pmegp.msme.gov.in."
+        },
+        {
+          "_key": "3x5dplv",
+          "question": "What is the beneficiary contribution for PMEGP?",
+          "answer": "General category beneficiaries contribute 10%, while special category beneficiaries contribute 5% of the project cost."
+        },
+        {
+          "_key": "hzd2vbk",
+          "question": "Is there a deadline for PMEGP applications?",
+          "answer": "The scheme is active, and applications can be submitted through the official portal. There is no specific deadline mentioned in the current guidelines."
+        },
+        {
+          "_key": "pgoopiu",
+          "question": "Can I apply for PMEGP in an urban area?",
+          "answer": "Yes, you can apply in both urban and rural areas. The subsidy rate varies based on the location."
+        },
+        {
+          "_key": "6d1vzru",
+          "question": "What is the difference between general and special category in PMEGP?",
+          "answer": "Special category beneficiaries (SC/ST, OBC, minorities, women, ex-servicemen, physically handicapped) receive a higher subsidy and lower contribution compared to general category beneficiaries."
+        },
+        {
+          "_key": "6vx7xe9",
+          "question": "How is the project report for PMEGP prepared?",
+          "answer": "The project report should include a detailed business plan, financial projections, and other relevant information. It is a mandatory document for the application."
+        },
+        {
+          "_key": "yvqfx7b",
+          "question": "Where can I find the official PMEGP guidelines?",
+          "answer": "The official guidelines are available on the KVIC website at https://www.kviconline.gov.in/pmegpeportal/pmegpweb/docs/pmegp_guidelines.pdf."
+        }
+      ]
+    },
+    "omittedInternalFields": [
+      "schemaMarkup",
+      "sourceResearchId",
+      "researchSchemeName",
+      "auditScore",
+      "researchVerifiedAt",
+      "generatedAt",
+      "sources",
+      "audit",
+      "humanReview",
+      "mode"
+    ],
+    "mappingSummary": {
+      "detailedDescriptionBlocks": 25,
+      "benefitsBlocks": 5,
+      "eligibilityBlocks": 5,
+      "documentsRequiredBlocks": 5,
+      "faqCount": 15,
+      "categoryStatus": "configured"
+    }
+  }
+}

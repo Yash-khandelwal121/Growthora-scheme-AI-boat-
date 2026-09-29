@@ -1,0 +1,110 @@
+{
+  "FINAL_STATUS": "FAIL",
+  "Research_HTTP": "200 OK",
+  "Official_sources_found": 4,
+  "Research_model": "tavily_groq",
+  "Research_fallback_used": "Check logs",
+  "Persisted_research_file": "mudra-loan-scheme-2026.master-research.json",
+  "Persisted_research_reload": "PASS",
+  "MASTER_JSON_valid": "YES",
+  "Content_model": "qwen/qwen3.8-27b / openai/gpt-oss-20b",
+  "Content_fallback_used": "Maybe (Check logs)",
+  "Content_generation": "PASS",
+  "FactGuard_failures": 0,
+  "CriticalFactCoverage": 18.2,
+  "Audit_score": 90,
+  "publishReadiness": "blocked",
+  "Benefits_count": 5,
+  "Eligibility_count": 5,
+  "Documents_count": 5,
+  "FAQ_count": 15,
+  "SEO_keyword_count": 20,
+  "Slug": "pradhan-mantri-mudra-yojana-pmmy",
+  "Canonical": "https://growthora.co.in/govtschemes/pradhan-mantri-mudra-yojana-pmmy",
+  "DOCX_result": "PASS",
+  "Sanity_Preview_result": "PASS",
+  "Sanity_mutations": 0,
+  "ACTUAL_DATA": {
+    "shortDescription": "The Pradhan Mantri Mudra Yojana (PMMY) is an active government scheme designed to provide financial assistance to micro-enterprises. It aims to support small businesses and promote self-employment by offering credit facilities. The scheme is currently active and serves as a key initiative for financial inclusion and enterprise development in India.",
+    "detailedDescription": {
+      "introduction": "The Pradhan Mantri Mudra Yojana (PMMY) is a significant government initiative aimed at providing financial support to micro-enterprises. As an active scheme, it plays a crucial role in promoting entrepreneurship and self-employment across India. This guide outlines the key aspects of the scheme, including its objectives and general framework.",
+      "schemeAtAGlance": {
+        "Scheme Name": "Pradhan Mantri Mudra Yojana (PMMY)",
+        "Status": "Active",
+        "Objective": "Provide financial assistance to micro-enterprises"
+      },
+      "whatIsScheme": "The Pradhan Mantri Mudra Yojana (PMMY) is a government scheme that provides financial assistance to micro-enterprises. It is designed to support small businesses and promote self-employment by offering credit facilities. The scheme is currently active and serves as a key initiative for financial inclusion and enterprise development in India.",
+      "objectives": "The primary objective of the Pradhan Mantri Mudra Yojana (PMMY) is to provide financial assistance to micro-enterprises. It aims to support small businesses and promote self-employment by offering credit facilities. The scheme is designed to enhance financial inclusion and support enterprise development in India."
+    },
+    "benefits": [
+      "Financial Assistance: Provides financial support to micro-enterprises.",
+      "Promotes Self-Employment: Aims to promote self-employment through credit facilities.",
+      "Supports Small Businesses: Designed to support small businesses and micro-enterprises.",
+      "Enhances Financial Inclusion: Serves as a key initiative for financial inclusion in India.",
+      "Enterprise Development: Supports enterprise development through government-backed credit."
+    ],
+    "eligibility": [
+      "Target Beneficiaries: Micro-enterprises and small businesses.",
+      "Purpose: Promoting self-employment and entrepreneurship.",
+      "Scheme Status: Active government scheme.",
+      "Financial Inclusion: Supports financial inclusion initiatives.",
+      "Enterprise Development: Aims to support enterprise development."
+    ],
+    "documents": [
+      "Not specified in research",
+      "Not specified in research",
+      "Not specified in research",
+      "Not specified in research",
+      "Not specified in research"
+    ],
+    "faqs": [
+      {
+        "question": "What is the Pradhan Mantri Mudra Yojana (PMMY)?",
+        "answer": "The Pradhan Mantri Mudra Yojana (PMMY) is an active government scheme that provides financial assistance to micro-enterprises."
+      },
+      {
+        "question": "Who is eligible for the Pradhan Mantri Mudra Yojana?",
+        "answer": "Micro-enterprises and small businesses are the target beneficiaries of the scheme."
+      },
+      {
+        "question": "What is the primary objective of the Pradhan Mantri Mudra Yojana?",
+        "answer": "The primary objective is to provide financial assistance to micro-enterprises and promote self-employment."
+      },
+      {
+        "question": "Is the Pradhan Mantri Mudra Yojana currently active?",
+        "answer": "Yes, the Pradhan Mantri Mudra Yojana is currently an active government scheme."
+      },
+      {
+        "question": "How does the Pradhan Mantri Mudra Yojana support small businesses?",
+        "answer": "It supports small businesses by providing financial assistance and credit facilities."
+      }
+    ],
+    "conclusion": "The Pradhan Mantri Mudra Yojana (PMMY) is an active government scheme that provides financial assistance to micro-enterprises. It aims to promote self-employment and support small businesses through credit facilities. The scheme plays a crucial role in enhancing financial inclusion and supporting enterprise development in India. For assistance with eligibility assessment, documentation or scheme application planning, you can consult Growthora.",
+    "seoTitle": "Pradhan Mantri Mudra Yojana (PMMY): Details",
+    "seoDescription": "Explore the Pradhan Mantri Mudra Yojana (PMMY). Understand its objectives, eligibility, and how it supports micro-enterprises in India.",
+    "keywords": [
+      "Pradhan Mantri Mudra Yojana",
+      "PMMY",
+      "Mudra loan",
+      "micro-enterprise",
+      "financial assistance",
+      "small business",
+      "entrepreneurship",
+      "loan scheme",
+      "government scheme",
+      "business loan",
+      "startup support",
+      "credit facility",
+      "self-employment",
+      "rural development",
+      "urban development",
+      "financial inclusion",
+      "microfinance",
+      "enterprise development",
+      "credit access",
+      "economic growth"
+    ],
+    "slug": "pradhan-mantri-mudra-yojana-pmmy",
+    "canonical": "https://growthora.co.in/govtschemes/pradhan-mantri-mudra-yojana-pmmy"
+  }
+}

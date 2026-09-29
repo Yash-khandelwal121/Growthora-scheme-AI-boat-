@@ -1,0 +1,192 @@
+{
+  "scheme": {
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "status": {
+      "value": "Active",
+      "supportedBy": [
+        "src_146w9me",
+        "src_iyg7exv"
+      ],
+      "evidence": "Recent press releases (Jul 2024) and active official portal indicate the scheme is operational with updated guidelines."
+    },
+    "applicationPortalAvailable": {
+      "value": true,
+      "supportedBy": [
+        "src_iyg7exv",
+        "src_tcysnfy"
+      ],
+      "evidence": "Official scheme portal exists at pmegp.msme.gov.in."
+    },
+    "ministry": {
+      "officialName": "Ministry of Micro, Small & Medium Enterprises",
+      "verifiedAliases": [
+        "MSME Ministry"
+      ],
+      "supportedBy": [
+        "src_hrrjvmt"
+      ]
+    },
+    "implementingAgency": {
+      "officialName": "Ministry of Micro, Small & Medium Enterprises (PMEGP Section)",
+      "verifiedAliases": [],
+      "supportedBy": [
+        "src_hrrjvmt"
+      ]
+    },
+    "officialWebsite": "https://pmegp.msme.gov.in",
+    "sourceIds": [
+      "src_hrrjvmt",
+      "src_iyg7exv",
+      "src_tcysnfy"
+    ]
+  },
+  "financialAssistance": {
+    "maxProjectCost": {
+      "manufacturing": {
+        "value": "Rs. 50 lakh",
+        "supportedBy": [
+          "src_146w9me",
+          "src_eks3jma"
+        ],
+        "evidence": "Maximum project cost admissible has been enhanced from Rs. 25 lakh to Rs. 50 lakh for manufacturing sector."
+      },
+      "service": {
+        "value": "Rs. 20 lakh",
+        "supportedBy": [
+          "src_146w9me",
+          "src_eks3jma"
+        ],
+        "evidence": "Maximum project cost admissible has been enhanced from Rs. 10 lakh to Rs. 20 lakh for service sector."
+      }
+    },
+    "subsidyStructure": [
+      {
+        "beneficiaryCategory": "General Category",
+        "contribution": "10%",
+        "urbanSubsidy": "15%",
+        "ruralSubsidy": "25%",
+        "supportedBy": [
+          "src_bw5caru"
+        ],
+        "evidence": "Table shows General Category: Beneficiary contribution 10%, Urban subsidy 15%, Rural subsidy 25%."
+      },
+      {
+        "beneficiaryCategory": "Special Category (including SC/ST/OBC/Minorities/Women, Ex-servicemen, Physically handicapped)",
+        "contribution": "5%",
+        "urbanSubsidy": "25%",
+        "ruralSubsidy": "35%",
+        "supportedBy": [
+          "src_official_kvic_1790572459771"
+        ],
+        "evidence": "Official KVIC guidelines specify 5% contribution and 25% (urban) / 35% (rural) subsidy for special categories."
+      }
+    ]
+  },
+  "eligibility": {
+    "ageLimit": {
+      "value": "Above 18 years",
+      "supportedBy": [
+        "src_iyg7exv",
+        "src_tcysnfy"
+      ],
+      "evidence": "Eligibility Conditions: Any individual, above 18 years of age."
+    },
+    "educationRequirement": {
+      "value": "VIII standard pass for projects above Rs. 10 lakh in manufacturing and Rs. 5 lakh in service/business",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ],
+      "evidence": "Official guidelines state beneficiary must have passed VIII standard for manufacturing projects above 10 lakh and service projects above 5 lakh."
+    },
+    "newProjectRequirement": {
+      "value": "Only for new micro-enterprises. Existing units or those that have already availed government subsidy under other schemes are not eligible.",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ]
+    }
+  },
+  "documents": [
+    {
+      "documentName": "Aadhaar Card or Alternative Identification",
+      "status": "Mandatory",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ]
+    },
+    {
+      "documentName": "Project Report",
+      "status": "Mandatory",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ]
+    },
+    {
+      "documentName": "Education Certificate",
+      "status": "Where applicable (for higher project costs)",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ]
+    },
+    {
+      "documentName": "Caste / Special Category Certificate",
+      "status": "Where applicable",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ]
+    },
+    {
+      "documentName": "Rural Area Certificate",
+      "status": "Where applicable",
+      "supportedBy": [
+        "src_official_kvic_1790572459771"
+      ]
+    }
+  ],
+  "applicationProcess": {
+    "type": "Online/Offline via KVIC",
+    "steps": [],
+    "sourceIds": []
+  },
+  "importantDates": {
+    "applicationDeadline": null
+  },
+  "sources": [
+    "src_hrrjvmt",
+    "src_q6jzygw",
+    "src_616x9gb",
+    "src_146w9me",
+    "src_eks3jma",
+    "src_dxjeil5",
+    "src_bw5caru",
+    "src_v9kf7v8",
+    "src_iyg7exv",
+    "src_tcysnfy",
+    {
+      "id": "src_official_kvic_1790572459771",
+      "title": "PMEGP Guidelines & Subsidy Structure",
+      "url": "https://www.kviconline.gov.in/pmegpeportal/pmegpweb/docs/pmegp_guidelines.pdf",
+      "domain": "kviconline.gov.in",
+      "authorityLevel": "official",
+      "authorityScore": 100
+    }
+  ],
+  "conflictLog": [],
+  "provider": "tavily_groq",
+  "mode": "free_live_test",
+  "liveModelCalls": true,
+  "liveWebResearch": true,
+  "researchId": "res_7sbe1uq8",
+  "stats": {
+    "officialSourcesFound": 8,
+    "secondarySourcesFound": 2,
+    "sourcesRejected": 2,
+    "conflictsFound": 0,
+    "conflictsResolved": 0,
+    "needsHumanReview": [],
+    "tavilyCalls": 4,
+    "groqNormalizationCalls": 3,
+    "groqBrowserSearchCalls": 0
+  },
+  "slug": "pmegp-scheme-2026",
+  "generatedAt": "2026-09-28T04:40:39.611Z"
+}

@@ -1,0 +1,151 @@
+{
+  "applicationProcess": {
+    "sourceIds": [],
+    "steps": [],
+    "type": null
+  },
+  "documents": [],
+  "eligibility": {
+    "ageLimit": {
+      "supportedBy": [],
+      "value": null
+    },
+    "educationRequirement": {
+      "supportedBy": [
+        "src_v3pnr6i"
+      ],
+      "value": "Minimum 8th pass"
+    }
+  },
+  "financialAssistance": {
+    "maxProjectCost": {
+      "manufacturing": {
+        "supportedBy": [
+          "src_g48705g",
+          "src_0vy3ff7",
+          "src_tjvr2p0"
+        ],
+        "value": "₹20 lakh"
+      },
+      "service": {
+        "supportedBy": [
+          "src_g48705g",
+          "src_0vy3ff7",
+          "src_tjvr2p0"
+        ],
+        "value": "₹20 lakh"
+      }
+    },
+    "subsidyStructure": []
+  },
+  "importantDates": {
+    "applicationDeadline": null
+  },
+  "scheme": {
+    "applicationPortalAvailable": false,
+    "implementingAgency": {
+      "officialName": "Micro Units Development & Refinance Agency Ltd",
+      "supportedBy": [
+        "src_tjvr2p0",
+        "src_0vy3ff7"
+      ],
+      "verifiedAliases": []
+    },
+    "ministry": {
+      "officialName": "Ministry of Finance",
+      "supportedBy": [
+        "src_g48705g"
+      ],
+      "verifiedAliases": []
+    },
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "officialWebsite": null,
+    "sourceIds": [
+      "src_g48705g",
+      "src_tjvr2p0",
+      "src_0vy3ff7"
+    ],
+    "status": null
+  },
+  "sources": [
+    {
+      "authorityLevel": "government_portal",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_g48705g",
+      "retrievedAt": "2026-09-28T06:17:18.840Z",
+      "sourceType": "government_portal",
+      "title": "Loan limit under Pradhan Mantri Mudra Yojana (PMMY) ...",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2068019"
+    },
+    {
+      "authorityLevel": "government_portal",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_tjvr2p0",
+      "retrievedAt": "2026-09-28T06:17:18.840Z",
+      "sourceType": "government_portal",
+      "title": "Pradhan Mantri Mudra Yojana",
+      "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2069170"
+    },
+    {
+      "authorityLevel": "government_portal",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_0vy3ff7",
+      "retrievedAt": "2026-09-28T06:17:18.840Z",
+      "sourceType": "government_portal",
+      "title": "Pradhan Mantri Mudra Yojana",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2069170&reg=3&lang=2"
+    },
+    {
+      "authorityLevel": "government_guideline",
+      "authorityScore": 100,
+      "domain": "dnv.indiannavy.gov.in",
+      "id": "src_v3pnr6i",
+      "retrievedAt": "2026-09-28T06:18:14.617Z",
+      "sourceType": "government_guideline",
+      "title": "OFFICERS' PRE-RETIREMENT CAPSULE",
+      "url": "https://dnv.indiannavy.gov.in/sites/default/files/repository-document/2.%20pre-retirement%20capsule%20-02%20Jun%2022.pdf"
+    }
+  ],
+  "preliminaryCriticalFactCoverage": {
+    "requiredCriticalFacts": 11,
+    "extractedCriticalFacts": 6,
+    "sourceSupportedCriticalFacts": 6,
+    "coveragePercent": 54.5,
+    "nullCriticalFields": [
+      "scheme.officialWebsite",
+      "scheme.status",
+      "financialAssistance.subsidyDetails",
+      "financialAssistance.beneficiaryContribution",
+      "eligibility.ageLimit"
+    ],
+    "criticalFactsWithoutSource": [],
+    "criticalFactsWithSource": [
+      "scheme.name",
+      "scheme.ministry",
+      "scheme.implementingAgency",
+      "financialAssistance.maxProjectCost.manufacturing",
+      "financialAssistance.maxProjectCost.service",
+      "eligibility.educationRequirement"
+    ]
+  },
+  "provider": "tavily_groq",
+  "mode": "free_live_test",
+  "liveModelCalls": true,
+  "liveWebResearch": true,
+  "researchId": "res_wa0sd2hf",
+  "stats": {
+    "officialSourcesFound": 6,
+    "secondarySourcesFound": 4,
+    "sourcesRejected": 6,
+    "conflictsFound": 0,
+    "conflictsResolved": 0,
+    "needsHumanReview": [],
+    "tavilyCalls": 7,
+    "groqExtractionCalls": 6,
+    "groqNormalizationCalls": 8,
+    "groqBrowserSearchCalls": 0
+  }
+}

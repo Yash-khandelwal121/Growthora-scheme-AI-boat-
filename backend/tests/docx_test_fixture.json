@@ -1,0 +1,285 @@
+{
+  "mode": "test",
+  "researchSchemeName": "Prime Minister's Employment Generation Programme (PMEGP)",
+  "sourceResearchId": "res_test",
+  "seo": {
+    "primaryKeyword": "PMEGP Scheme 2026",
+    "secondaryKeywords": [
+      "PMEGP eligibility",
+      "PMEGP subsidy",
+      "PMEGP loan",
+      "PMEGP online application"
+    ],
+    "metaTitle": "PMEGP Scheme 2026: Eligibility, Subsidy & Application",
+    "metaDescription": "Complete guide to PMEGP scheme 2026. Learn about up to 35% subsidy, manufacturing & service limits, eligibility criteria, documents, and portal steps.",
+    "slug": "pmegp-scheme-2026",
+    "canonicalPath": "https://growthora.co.in/govtschemes/pmegp-scheme-2026"
+  },
+  "article": {
+    "h1": "PMEGP Scheme 2026: Complete Guide to Eligibility, Subsidy & Application",
+    "snippetAnswer": "The Prime Minister's Employment Generation Programme (PMEGP) is a credit-linked subsidy scheme administered by the Ministry of MSME and implemented nationally by KVIC to establish new micro-enterprises. It offers maximum eligible project costs of ₹50 lakh for manufacturing and ₹20 lakh for service/business units. General category beneficiaries receive 15% (urban) or 25% (rural) subsidy with 10% contribution, while special category beneficiaries receive 25% (urban) or 35% (rural) subsidy with 5% contribution. Online applications are accepted via kviconline.gov.in.",
+    "schemeAtAGlance": {
+      "Scheme Name": "Prime Minister's Employment Generation Programme (PMEGP)",
+      "Administering Ministry": "Ministry of Micro, Small & Medium Enterprises (MSME)",
+      "National Nodal Agency": "Khadi and Village Industries Commission (KVIC)",
+      "Maximum Project Cost (Manufacturing)": "₹50 lakh",
+      "Maximum Project Cost (Service/Business)": "₹20 lakh",
+      "General Category Subsidy (Urban / Rural)": "15% / 25%",
+      "Special Category Subsidy (Urban / Rural)": "25% / 35%",
+      "General Category Contribution": "10%",
+      "Special Category Contribution": "5%",
+      "Official Portal": "kviconline.gov.in"
+    },
+    "introduction": "The Prime Minister's Employment Generation Programme (PMEGP) is a flagship credit-linked subsidy scheme initiated by the Ministry of Micro, Small & Medium Enterprises (MSME) to generate employment opportunities by establishing new micro-enterprises in non-farm sectors across India.",
+    "whatIsScheme": "PMEGP is a financial assistance initiative administered at the national level by the Khadi and Village Industries Commission (KVIC) as the single nodal agency, with state-level implementation through KVIC directorates, State KVIBs, District Industries Centres (DICs), and Coir Board. It provides margin money subsidies directly linked to bank credit.",
+    "detailedExplanation": [
+      {
+        "heading": "Project Cost Ceilings & Sectoral Limits",
+        "text": "PMEGP clearly distinguishes project cost limits by sector. Under the revised guidelines, the maximum eligible project cost for manufacturing sector micro-enterprises is ₹50 lakh. For service and business sector projects, the maximum eligible project cost is ₹20 lakh. Sanctioned project amounts above these ceiling limits are funded through bank credit, but margin money subsidy calculation is capped strictly at ₹50 lakh for manufacturing and ₹20 lakh for service units."
+      },
+      {
+        "heading": "Subsidy & Beneficiary Contribution Structure",
+        "text": "Margin money subsidy varies according to beneficiary category and project location. General Category applicants in urban areas receive a 15% subsidy with a 10% own contribution, while in rural areas they receive a 25% subsidy with a 10% contribution. Special Category beneficiaries (SC, ST, OBC, Minorities, Women, Ex-Servicemen, Differently Abled, NER, Hill & Border areas) in urban areas receive a 25% subsidy with a 5% contribution, while in rural areas they receive a 35% subsidy with a 5% contribution."
+      },
+      {
+        "heading": "Eligibility Distinction: New Enterprises vs Upgradation",
+        "text": "Standard PMEGP assistance is strictly for setting up NEW micro-enterprises. Existing units or projects that have already availed government subsidy under any other Central or State scheme are ineligible for standard PMEGP. A separate second loan component for existing well-performing PMEGP/REGP/MUDRA units offers upgradation assistance up to ₹1 crore for manufacturing and ₹25 lakh for service with a 15-20% subsidy."
+      }
+    ],
+    "keyBenefits": [
+      {
+        "title": "Substantial Margin Money Subsidy",
+        "description": "Up to 35% subsidy for special category beneficiaries in rural areas and 25% in urban areas."
+      },
+      {
+        "title": "Sector-Specific Financial Ceilings",
+        "description": "Financial support for manufacturing projects up to ₹50 lakh and service projects up to ₹20 lakh."
+      },
+      {
+        "title": "Low Beneficiary Contribution Requirement",
+        "description": "Requires only 5% own contribution for special categories and 10% for general category applicants."
+      },
+      {
+        "title": "Collateral-Free Bank Financing",
+        "description": "Bank loans up to ₹10 lakh are covered under CGTMSE without mandatory collateral security."
+      },
+      {
+        "title": "Structured EDP Training Support",
+        "description": "Mandatory Entrepreneurship Development Programme training provided to equip entrepreneurs for business success."
+      }
+    ],
+    "eligibility": [
+      {
+        "category": "Age Requirement",
+        "criteria": "Minimum 18 years of age (no upper age limit)."
+      },
+      {
+        "category": "Educational Qualification",
+        "criteria": "At least 8th pass for manufacturing projects above ₹10 lakh and service projects above ₹5 lakh."
+      },
+      {
+        "category": "Eligible Applicant Entities",
+        "criteria": "Individuals, Self Help Groups, Registered Societies, and Charitable Trusts."
+      },
+      {
+        "category": "New Enterprise Condition",
+        "criteria": "Assistance is strictly for setting up NEW micro-enterprises; existing subsidized units are ineligible for first-stage PMEGP."
+      },
+      {
+        "category": "Income Ceiling Exclusion",
+        "criteria": "No upper income ceiling for establishing new units under PMEGP."
+      }
+    ],
+    "documentsRequired": [
+      {
+        "document": "Aadhaar Card",
+        "purpose": "Identity and Address Verification",
+        "requirementStatus": "Mandatory"
+      },
+      {
+        "document": "Detailed Project Report (DPR)",
+        "purpose": "Business Plan and Financial Outlay Assessment",
+        "requirementStatus": "Mandatory"
+      },
+      {
+        "document": "Educational Marksheet / Certificate",
+        "purpose": "Proof of 8th Pass (for manufacturing > ₹10 lakh / service > ₹5 lakh)",
+        "requirementStatus": "Mandatory for threshold projects"
+      },
+      {
+        "document": "Caste / Special Category Certificate",
+        "purpose": "Proof for 25%-35% Special Category Subsidy Claim",
+        "requirementStatus": "Mandatory for Special Category"
+      },
+      {
+        "document": "Rural Area Certificate",
+        "purpose": "Proof of project location in rural area for higher subsidy",
+        "requirementStatus": "Mandatory for Rural Subsidy"
+      }
+    ],
+    "applicationProcess": [
+      "Visit the official PMEGP e-portal at kviconline.gov.in",
+      "Click on PMEGP Application Form for Individual or Non-Individual category",
+      "Fill in personal, bank, agency, and project details",
+      "Upload required Aadhaar, DPR, education, and category documents",
+      "Submit the online application and track status via Scorecard ID"
+    ],
+    "mistakesToAvoid": [
+      "Applying for an existing business under the standard new-unit PMEGP scheme",
+      "Failing to submit the 8th pass certificate for manufacturing projects exceeding ₹10 lakh",
+      "Selecting an incorrect implementing agency or DIC location during portal registration"
+    ],
+    "faqs": [
+      {
+        "question": "What is the maximum project cost allowed under PMEGP?",
+        "answer": "The maximum eligible project cost is ₹50 lakh for manufacturing sector projects and ₹20 lakh for service/business sector projects under PMEGP guidelines."
+      },
+      {
+        "question": "Who administers and implements the PMEGP scheme?",
+        "answer": "PMEGP is administered by the Ministry of MSME and implemented nationally by Khadi and Village Industries Commission (KVIC) as the single nodal agency, alongside KVIB, DIC, and Coir Board."
+      },
+      {
+        "question": "What is the subsidy rate for general category applicants?",
+        "answer": "General category applicants receive a 15% subsidy in urban areas and a 25% subsidy in rural areas, with a mandatory 10% own contribution."
+      },
+      {
+        "question": "What is the subsidy rate for special category beneficiaries?",
+        "answer": "Special category beneficiaries (SC, ST, OBC, Minorities, Women, Ex-Servicemen, PH) receive a 25% subsidy in urban areas and a 35% subsidy in rural areas, with a 5% contribution."
+      },
+      {
+        "question": "Can existing businesses apply for standard PMEGP loans?",
+        "answer": "No. Standard PMEGP is strictly for setting up new micro-enterprises. However, existing well-performing units can apply for a separate second loan for expansion/upgradation."
+      },
+      {
+        "question": "Is 8th pass mandatory for all PMEGP applications?",
+        "answer": "Education qualification of 8th pass is mandatory only if project cost exceeds ₹10 lakh in manufacturing sector or ₹5 lakh in service sector."
+      },
+      {
+        "question": "Is there an income limit to apply for PMEGP?",
+        "answer": "No. There is no upper income limit for individuals establishing new projects under PMEGP."
+      },
+      {
+        "question": "How is the PMEGP application submitted?",
+        "answer": "PMEGP applications are submitted strictly online through the official portal at kviconline.gov.in."
+      },
+      {
+        "question": "Is collateral security required for PMEGP loans?",
+        "answer": "No collateral security is required for project loans up to ₹10 lakh under CGTMSE coverage."
+      },
+      {
+        "question": "What is the minimum age requirement for PMEGP?",
+        "answer": "The applicant must be at least 18 years of age at the time of application."
+      },
+      {
+        "question": "What happens if a project cost exceeds ₹50 lakh in manufacturing?",
+        "answer": "Bank credit can fund project costs above ₹50 lakh, but the maximum margin money subsidy calculation is strictly capped at ₹50 lakh."
+      },
+      {
+        "question": "What is the duration of EDP training under PMEGP?",
+        "answer": "Entrepreneurship Development Programme (EDP) training is mandatory for selected beneficiaries prior to subsidy release."
+      },
+      {
+        "question": "Which agencies accept offline PMEGP physical forms?",
+        "answer": "No physical application forms are accepted; all applications must be filed on kviconline.gov.in."
+      },
+      {
+        "question": "Can SHGs or Charitable Trusts apply for PMEGP?",
+        "answer": "Yes. Self Help Groups, Registered Societies, and Charitable Trusts are eligible to apply under PMEGP."
+      },
+      {
+        "question": "What is the lock-in period for PMEGP margin money subsidy?",
+        "answer": "The margin money subsidy is kept in a term deposit account for a lock-in period of 3 years by the financing bank branch."
+      }
+    ],
+    "conclusion": "The Prime Minister's Employment Generation Programme (PMEGP) remains India's premier credit-linked subsidy scheme for aspiring micro-entrepreneurs in both rural and urban areas. By offering up to 35% margin money subsidy and credit support up to ₹50 lakh, PMEGP effectively removes capital barriers for setting up new enterprises. For assistance with eligibility assessment, documentation or scheme application planning, you can consult Growthora."
+  },
+  "sources": [
+    {
+      "title": "KVIC PMEGP Portal",
+      "url": "https://www.kviconline.gov.in/pmegpeportal",
+      "domain": "kviconline.gov.in",
+      "authorityLevel": "official_implementing_agency"
+    },
+    {
+      "title": "Ministry of MSME Official Portal",
+      "url": "https://msme.gov.in",
+      "domain": "msme.gov.in",
+      "authorityLevel": "official_ministry"
+    }
+  ],
+  "schema": {
+    "schemaObject": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://growthora.co.in/#website",
+          "url": "https://growthora.co.in",
+          "name": "Growthora"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://growthora.co.in/govtschemes/pmegp-scheme-2026#webpage",
+          "url": "https://growthora.co.in/govtschemes/pmegp-scheme-2026",
+          "name": "PMEGP Scheme 2026: Eligibility, Subsidy & Application",
+          "description": "Complete guide to PMEGP scheme 2026. Learn about 35% subsidy, manufacturing & service limits, eligibility criteria, documents, and portal steps.",
+          "isPartOf": {
+            "@id": "https://growthora.co.in/#website"
+          }
+        },
+        {
+          "@type": "Article",
+          "@id": "https://growthora.co.in/govtschemes/pmegp-scheme-2026#article",
+          "isPartOf": {
+            "@id": "https://growthora.co.in/govtschemes/pmegp-scheme-2026#webpage"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://growthora.co.in/govtschemes/pmegp-scheme-2026#webpage"
+          },
+          "headline": "PMEGP Scheme 2026: Complete Guide to Eligibility, Subsidy & Application",
+          "description": "Complete guide to PMEGP scheme 2026. Learn about 35% subsidy, manufacturing & service limits, eligibility criteria, documents, and portal steps.",
+          "author": {
+            "@type": "Organization",
+            "name": "Growthora Editorial Team"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://growthora.co.in/#organization",
+            "name": "Growthora"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://growthora.co.in/govtschemes/pmegp-scheme-2026#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://growthora.co.in"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Schemes",
+              "item": "https://growthora.co.in/govtschemes"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "PMEGP Scheme 2026: Complete Guide to Eligibility, Subsidy & Application",
+              "item": "https://growthora.co.in/govtschemes/pmegp-scheme-2026"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "audit": {
+    "score": 99,
+    "passed": true,
+    "warnings": [],
+    "failures": []
+  },
+  "humanReview": []
+}

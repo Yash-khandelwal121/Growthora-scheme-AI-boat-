@@ -1,0 +1,22 @@
+{
+  "FINAL_STATUS": "FAIL",
+  "Research_HTTP": "200 OK",
+  "Official_sources_found": 3,
+  "Research_model": "openai/gpt-oss-20b",
+  "Content_model": "qwen/qwen3.8-27b / openai/gpt-oss-20b",
+  "Fallback_used": "YES",
+  "FactGuard_failures": 0,
+  "CriticalFactCoverage": 0,
+  "Audit_score": 84,
+  "publishReadiness": "blocked",
+  "Benefits_count": 5,
+  "Eligibility_count": 5,
+  "Documents_count": 5,
+  "FAQ_count": 15,
+  "SEO_keyword_count": 20,
+  "Slug": "pradhan-mantri-mudra-yojana-pmmy",
+  "Canonical": "https://growthora.co.in/govtschemes/pradhan-mantri-mudra-yojana-pmmy",
+  "DOCX_result": "PASS",
+  "Sanity_Preview_result": "PASS",
+  "Sanity_mutations": 0
+}

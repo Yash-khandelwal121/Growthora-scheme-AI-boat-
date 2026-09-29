@@ -1,0 +1,221 @@
+{
+  "applicationProcess": {
+    "sourceIds": [
+      "src_ijrqdsm"
+    ],
+    "steps": [
+      "Register on portal www.pmvishwakarma.gov.in",
+      "Submit required documents"
+    ],
+    "type": "online registration"
+  },
+  "documents": [],
+  "eligibility": {
+    "ageLimit": {
+      "supportedBy": [],
+      "value": "18 years"
+    },
+    "educationRequirement": {
+      "supportedBy": [],
+      "value": null
+    }
+  },
+  "financialAssistance": {
+    "maxProjectCost": {
+      "manufacturing": {
+        "supportedBy": [],
+        "value": "Rs. 1.00 crore"
+      },
+      "service": {
+        "supportedBy": [],
+        "value": "Rs. 25 lakh"
+      }
+    },
+    "subsidyStructure": [
+      {
+        "beneficiaryCategory": "",
+        "contribution": "15% (20% for NER and Hill States)",
+        "ruralSubsidy": "",
+        "supportedBy": [],
+        "urbanSubsidy": ""
+      }
+    ]
+  },
+  "importantDates": {
+    "applicationDeadline": null
+  },
+  "scheme": {
+    "applicationPortalAvailable": true,
+    "implementingAgency": {
+      "officialName": "PM Vishwakarma Scheme",
+      "supportedBy": [],
+      "verifiedAliases": []
+    },
+    "ministry": {
+      "officialName": "Ministry of Micro, Small and Medium Enterprises",
+      "supportedBy": [],
+      "verifiedAliases": []
+    },
+    "name": "PM Vishwakarma",
+    "officialWebsite": "https://pmvishwakarma.gov.in",
+    "sourceIds": [
+      "src_nuv0q4o",
+      "src_mftg4nz",
+      "src_vlrovks",
+      "src_wc7f9vg",
+      "src_izeini5",
+      "src_iwkcdp7",
+      "src_jbsqrxr",
+      "src_r8tp273",
+      "src_pwfud1l",
+      "src_ijrqdsm"
+    ],
+    "status": null
+  },
+  "sources": [
+    {
+      "authorityLevel": null,
+      "authorityScore": 100,
+      "domain": "panchayat.tripura.gov.in",
+      "id": "src_nuv0q4o",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "eng-v30.0-PM Vishwakarma-Guidelines-final",
+      "url": "https://panchayat.tripura.gov.in/sites/default/files/2025-02/eng_v30.0_PM_Vishwakarma_Guidelines_final%20%282%29.pdf"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 100,
+      "domain": "pmvishwakarma.gov.in",
+      "id": "src_mftg4nz",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "Guidelines for Implementation",
+      "url": "https://pmvishwakarma.gov.in/FileHandling/ViewFile/MiscFiles%5CPM%20Vishwakarma-Guidelines.pdf"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_vlrovks",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "Press Release Page | Press Information Bureau",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1959098"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 100,
+      "domain": "master-msme.digifootprint.gov.in",
+      "id": "src_wc7f9vg",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "Scheme booklet-14.02.2025",
+      "url": "https://master-msme.digifootprint.gov.in/static/uploads/2025/09/1e1f90b5a39b05e3928b636c62445bf5.pdf"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_izeini5",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "Press Release:Press Information Bureau",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1992842"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 100,
+      "domain": "www.dcmsme.gov.in",
+      "id": "src_iwkcdp7",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "Schemes for MSMEs",
+      "url": "https://www.dcmsme.gov.in/ebook/MSMESchemebooklet2025-26.pdf"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_jbsqrxr",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "Press Release:Press Information Bureau",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1989108"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 90,
+      "domain": "champions.gov.in",
+      "id": "src_r8tp273",
+      "retrievedAt": "",
+      "sourceType": null,
+      "title": "MSME CHAMPIONS | Our Small Hands to make you LARGE",
+      "url": "https://champions.gov.in/Ministry-of-MSME/skills,loan,credit_guarantee,PM-atmnirbhar-Economic-Package,eligibility_criteria,guidelines_Schemes/query_questions_FAQs.htm"
+    }
+  ],
+  "preliminaryCriticalFactCoverage": {
+    "schemeType": "LOAN",
+    "applicableTotal": 6,
+    "supportedApplicable": 6,
+    "unresolvedApplicable": 0,
+    "notApplicable": 6,
+    "coveragePercent": 100,
+    "nullCriticalFields": [],
+    "criticalFactsWithoutSource": [],
+    "criticalFactsWithSource": [
+      "scheme.name",
+      "scheme.ministry",
+      "scheme.implementingAgency",
+      "scheme.officialDigitalSource",
+      "scheme.status",
+      "financialAssistance.loanCategories"
+    ],
+    "notApplicableFields": [
+      "financialAssistance.maxProjectCost.manufacturing",
+      "financialAssistance.maxProjectCost.service",
+      "financialAssistance.subsidyDetails",
+      "financialAssistance.beneficiaryContribution",
+      "eligibility.ageLimit",
+      "eligibility.educationRequirement"
+    ],
+    "requiredCriticalFacts": 6,
+    "extractedCriticalFacts": 6,
+    "sourceSupportedCriticalFacts": 6
+  },
+  "provider": "tavily_groq",
+  "mode": "free_live_test",
+  "liveModelCalls": true,
+  "liveWebResearch": true,
+  "researchId": "res_g705br2l",
+  "stats": {
+    "officialSourcesFound": 7,
+    "secondarySourcesFound": 3,
+    "sourcesRejected": 2,
+    "conflictsFound": 0,
+    "conflictsResolved": 0,
+    "needsHumanReview": [],
+    "tavilyCalls": 4,
+    "groqExtractionCalls": 0,
+    "groqNormalizationCalls": 2,
+    "groqBrowserSearchCalls": 0
+  },
+  "timingMetrics": {
+    "tavilyResearchMs": 4064,
+    "sourceFilteringMs": 1,
+    "evidenceExtractionMs": 0,
+    "normalizationMs": 42183,
+    "verificationMs": 0,
+    "contentGenerationMs": 0,
+    "factGuardMs": 0,
+    "auditMs": 0,
+    "docxMs": 0,
+    "sanityPreviewMs": 0,
+    "totalMs": 46299
+  },
+  "schemeSlug": "pm-vishwakarma-scheme-2026",
+  "slug": "pm-vishwakarma-scheme-2026",
+  "generatedAt": "2026-09-28T08:46:31.955Z",
+  "sourceFreshness": "2026-09-28T08:46:31.955Z",
+  "researchFingerprint": "f70767143aa87df4d3e60b2fa2c1e8d2"
+}

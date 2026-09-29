@@ -1,0 +1,253 @@
+{
+  "applicationProcess": {
+    "sourceIds": [],
+    "steps": [],
+    "type": null
+  },
+  "documents": [],
+  "eligibility": {
+    "ageLimit": {
+      "supportedBy": [],
+      "value": null
+    },
+    "educationRequirement": {
+      "supportedBy": [],
+      "value": null
+    }
+  },
+  "financialAssistance": {
+    "maxProjectCost": {
+      "manufacturing": {
+        "supportedBy": [],
+        "value": null
+      },
+      "service": {
+        "supportedBy": [],
+        "value": null
+      }
+    },
+    "subsidyStructure": []
+  },
+  "importantDates": {
+    "applicationDeadline": null
+  },
+  "scheme": {
+    "applicationPortalAvailable": false,
+    "implementingAgency": {
+      "officialName": "Credit Guarantee Trust Fund for Micro and Small Enterprises (CGTMSE)",
+      "supportedBy": [
+        "src_dfubiy5"
+      ],
+      "verifiedAliases": [
+        "CGTMSE"
+      ]
+    },
+    "ministry": {
+      "officialName": "Ministry of Micro, Small and Medium Enterprises",
+      "supportedBy": [
+        "src_dfubiy5"
+      ],
+      "verifiedAliases": [
+        "MSME"
+      ]
+    },
+    "name": "Credit Guarantee Scheme (CGS)",
+    "officialWebsite": null,
+    "sourceIds": [
+      "src_dfubiy5",
+      "src_ggcky4d",
+      "src_n98c05s",
+      "src_aqq30aj",
+      "src_gwn56u2",
+      "src_8f71l53",
+      "src_myls8wz"
+    ],
+    "status": null
+  },
+  "sources": [
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_n98c05s",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Revamping of Credit Guarantee Scheme for Micro & Small ...",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1912500"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 100,
+      "domain": "www.dcmsme.gov.in",
+      "id": "src_ggcky4d",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "CGTMSE%20guidelines.pdf",
+      "url": "https://www.dcmsme.gov.in/schemes/CGTMSE%20guidelines.pdf"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_aqq30aj",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Shri Narayan Rane launches the revamped CGTMSE ...",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1920289"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_dfubiy5",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Press Release Page | Press Information Bureau",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2199257&reg=3&lang=1"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 100,
+      "domain": "www.mofpi.gov.in",
+      "id": "src_qv07u2k",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "Guidelines PDF",
+      "url": "https://www.mofpi.gov.in/sites/default/files/pmfme_guidelines_english.pdf"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_gwn56u2",
+      "retrievedAt": null,
+      "sourceType": "pressRelease",
+      "title": "Significant growth in credit disbursement to MSME sector ...",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2240590&reg=3&lang=1"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 90,
+      "domain": "startupharyana.gov.in",
+      "id": "src_8f71l53",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "CREDIT GUARANTEE FUND SCHEME FOR MICRO AND ...",
+      "url": "https://startupharyana.gov.in/download-secure/eyJpdiI6Ii9sckxTTkdESWxSem4rK1pSaFFiN3c9PSIsInZhbHVlIjoiMTY2b3M1NDJCRk80WG1xQy9MS1FQTS9rVVM0cENydGdiNmw2enRwY3cxemNLK1h0OXdlN0xNU2NxaE1ycG5OSlNVNmgwSExNZWFqN3lVWWxXRldWQnc5MG93b0NvSFpqWE9pY1dEa3RHem89IiwibWFjIjoiNjlkMDI3OTNhZTA4Nzc1Yjc3NmMwZGM0YjM4OGI5OWNlYWI4OWE2NWE1ZGYzOTc0N2U2MmY3ODc3MzNmODJjZSIsInRhZyI6IiJ9/CREDIT%20GUARANTEE%20FUND%20SCHEME%20FOR%20MICRO%20AND%20SMALL%20ENTERPRISES"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 90,
+      "domain": "dsiidc.delhi.gov.in",
+      "id": "src_myls8wz",
+      "retrievedAt": null,
+      "sourceType": "guideline",
+      "title": "CGTMSE - DCGS",
+      "url": "https://dsiidc.delhi.gov.in/cgtmse-dcgs"
+    },
+    {
+      "authorityLevel": "official",
+      "authorityScore": 90,
+      "domain": "champions.gov.in",
+      "id": "src_gapwep4",
+      "retrievedAt": null,
+      "sourceType": "faq",
+      "title": "Questions",
+      "url": "https://champions.gov.in/Ministry-of-MSME/skills,loan,credit_guarantee,PM-atmnirbhar-Economic-Package,eligibility_criteria,guidelines_Schemes/query_questions_FAQs.htm"
+    },
+    {
+      "authorityLevel": "commercial",
+      "authorityScore": 30,
+      "domain": "www.tatacapital.com",
+      "id": "src_q2hppb8",
+      "retrievedAt": null,
+      "sourceType": "blog",
+      "title": "CGTMSE Scheme: Full Form, Eligibility & Credit Guarantee",
+      "url": "https://www.tatacapital.com/blog/loan-for-business/cgtmse-scheme-full-form-features-and-eligibility"
+    },
+    {
+      "authorityLevel": "commercial",
+      "authorityScore": 30,
+      "domain": "www.linkedin.com",
+      "id": "src_hesmcbz",
+      "retrievedAt": null,
+      "sourceType": "blog",
+      "title": "CGTMSE Scheme Eligibility and Application",
+      "url": "https://www.linkedin.com/pulse/complete-guide-cgtmse-scheme-eligibility-application-ajvaemsme-rnrrf"
+    },
+    {
+      "authorityLevel": "commercial",
+      "authorityScore": 30,
+      "domain": "udyogplus.adityabirlacapital.com",
+      "id": "src_710u1hh",
+      "retrievedAt": null,
+      "sourceType": "blog",
+      "title": "Complete Guide to Applying for the CGTMSE Scheme",
+      "url": "https://udyogplus.adityabirlacapital.com/blogs/cgtmse-scheme"
+    }
+  ],
+  "preliminaryCriticalFactCoverage": {
+    "schemeType": "LOAN",
+    "applicableTotal": 6,
+    "supportedApplicable": 6,
+    "unresolvedApplicable": 0,
+    "notApplicable": 6,
+    "coveragePercent": 100,
+    "nullCriticalFields": [],
+    "criticalFactsWithoutSource": [],
+    "criticalFactsWithSource": [
+      "scheme.name",
+      "scheme.ministry",
+      "scheme.implementingAgency",
+      "scheme.officialDigitalSource",
+      "scheme.status",
+      "financialAssistance.loanCategories"
+    ],
+    "notApplicableFields": [
+      "financialAssistance.maxProjectCost.manufacturing",
+      "financialAssistance.maxProjectCost.service",
+      "financialAssistance.subsidyDetails",
+      "financialAssistance.beneficiaryContribution",
+      "eligibility.ageLimit",
+      "eligibility.educationRequirement"
+    ],
+    "requiredCriticalFacts": 6,
+    "extractedCriticalFacts": 6,
+    "sourceSupportedCriticalFacts": 6
+  },
+  "provider": "tavily_groq",
+  "mode": "free_live_test",
+  "liveModelCalls": true,
+  "liveWebResearch": true,
+  "researchId": "res_jwwsq03w",
+  "stats": {
+    "officialSourcesFound": 6,
+    "secondarySourcesFound": 3,
+    "sourcesRejected": 3,
+    "conflictsFound": 0,
+    "conflictsResolved": 0,
+    "needsHumanReview": [],
+    "tavilyCalls": 4,
+    "groqExtractionCalls": 0,
+    "groqNormalizationCalls": 1,
+    "groqBrowserSearchCalls": 0
+  },
+  "timingMetrics": {
+    "tavilyResearchMs": 6394,
+    "sourceFilteringMs": 5,
+    "evidenceExtractionMs": 0,
+    "normalizationMs": 5084,
+    "verificationMs": 0,
+    "contentGenerationMs": 0,
+    "factGuardMs": 0,
+    "auditMs": 0,
+    "docxMs": 0,
+    "sanityPreviewMs": 0,
+    "totalMs": 11891
+  },
+  "schemeSlug": "cgtmse-scheme-2026",
+  "slug": "cgtmse-scheme-2026",
+  "generatedAt": "2026-09-28T07:06:59.251Z",
+  "sourceFreshness": "2026-09-28T07:06:59.251Z",
+  "researchFingerprint": "7013b092ca7af3d476b868f80008dff8"
+}
