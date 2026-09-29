@@ -373,8 +373,18 @@ function App() {
       return;
     }
     
-    // Explicit publishReadiness check to stop early if blocked
-    const isReady = articleData.publishReadiness === 'ready' || articleData.audit?.score >= 95 || articleData.audit?.passed === true;
+    const factGuardFailures = articleData.audit?.failures?.filter(f => f.toLowerCase().includes('factguard'))?.length || 0;
+    const coverage = articleData.criticalFactCoverage?.coveragePercent || 0;
+    const auditScore = articleData.audit?.score || 0;
+    const readiness = articleData.publishReadiness || 'blocked';
+
+    const isReady = (
+      factGuardFailures === 0 &&
+      coverage >= 95 &&
+      auditScore >= 95 &&
+      readiness === 'ready'
+    );
+
     if (!isReady) {
       setFeedback({ type: 'error', message: 'Content must pass FactGuard and Audit before generating DOCX.' });
       return;

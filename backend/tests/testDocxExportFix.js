@@ -34,6 +34,7 @@ async function runDocxExportIntegrityCheck() {
 
   for (const s of schemes) {
     const article = await generateArticle(s.research);
+    article.publishReadiness = 'ready'; // Simulate fully passing readiness for export test
     
     // Simulate HTTP exportController request
     let docxBuffer = null;

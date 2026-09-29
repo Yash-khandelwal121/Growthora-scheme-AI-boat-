@@ -13,7 +13,17 @@ exports.exportDocx = async (req, res) => {
       return res.status(400).json({ success: false, message: 'Invalid or incomplete final article data' });
     }
 
-    const isReady = content.publishReadiness === 'ready' || (content.audit && content.audit.score >= 95) || content.audit?.passed === true;
+    const factGuardFailures = content.audit?.failures?.filter(f => f.toLowerCase().includes('factguard'))?.length || 0;
+    const coverage = content.criticalFactCoverage?.coveragePercent || 0;
+    const auditScore = content.audit?.score || 0;
+    const readiness = content.publishReadiness || 'blocked';
+
+    const isReady = (
+      factGuardFailures === 0 &&
+      coverage >= 95 &&
+      auditScore >= 95 &&
+      readiness === 'ready'
+    );
     if (!isReady) {
       return res.status(400).json({
         success: false,
