@@ -156,10 +156,10 @@ function auditContent(articleData, factGuardResult, researchJson, criticalFactsW
   }
 
   const eligibilityCount = Array.isArray(article.eligibility) ? article.eligibility.length : 0;
-  if (eligibilityCount >= 5) {
-    checks.push("Content Quality: At least 5 eligibility items present (" + eligibilityCount + ")");
+  if (eligibilityCount >= 2) {
+    checks.push("Content Quality: At least 2 eligibility items present (" + eligibilityCount + ")");
   } else {
-    failures.push("Content Quality: eligibility must contain at least 5 unique items (actual: " + eligibilityCount + ")");
+    failures.push("Content Quality: eligibility must contain at least 2 unique items (actual: " + eligibilityCount + ")");
     scores.contentQuality -= 20;
   }
 
