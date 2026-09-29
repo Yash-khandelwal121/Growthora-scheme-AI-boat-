@@ -49,6 +49,18 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              breakdown: {
+                type: ["array", "null"],
+                items: {
+                  type: "object",
+                  additionalProperties: false,
+                  required: ["category", "limit"],
+                  properties: {
+                    category: { type: ["string", "null"] },
+                    limit: { type: ["string", "null"] }
+                  }
+                }
+              },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },

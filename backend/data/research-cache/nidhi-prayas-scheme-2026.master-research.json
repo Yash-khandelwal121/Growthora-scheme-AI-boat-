@@ -1,0 +1,244 @@
+{
+  "applicationProcess": {
+    "sourceIds": [
+      "src_p6eipd2",
+      "src_8nvjskr"
+    ],
+    "steps": [
+      "Submit proposal online via NIDHI PRAYAS PMU Portal",
+      "Upload required documents",
+      "Await evaluation and selection"
+    ],
+    "type": "online"
+  },
+  "documents": [
+    "Covering letter",
+    "Endorsement letter from the host institution",
+    "Registration certificate",
+    "MoA or MoU",
+    "Bank details",
+    "PAN card",
+    "CV/bio-data of the NIDHI-PRAYAS coordinator",
+    "Details of the proposed team",
+    "List of potential innovators",
+    "Layout plan for the PRAYAS Centre",
+    "Time-linked activity chart and detailed work plan for five years"
+  ],
+  "eligibility": {
+    "ageLimit": {
+      "value": "18 years",
+      "supportedBy": [
+        "src_mv1yb0y"
+      ]
+    },
+    "educationRequirement": {
+      "value": "NOT_STATED",
+      "supportedBy": []
+    }
+  },
+  "financialAssistance": {
+    "subsidyStructure": [],
+    "grantAmount": {
+      "value": "Up to ₹40 lakh",
+      "breakdown": [
+        {
+          "category": "PRAYAS Centre (PC)",
+          "limit": "Up to ₹20 lakh"
+        },
+        {
+          "category": "Advance PRAYAS Centre (APC)",
+          "limit": "Up to ₹40 lakh"
+        },
+        {
+          "category": "Overall Maximum",
+          "limit": "Up to ₹40 lakh"
+        }
+      ],
+      "supportedBy": [
+        "src_mv1yb0y"
+      ]
+    }
+  },
+  "importantDates": {
+    "applicationDeadline": "30 Jun 2026 6:00 pm IST"
+  },
+  "scheme": {
+    "applicationPortalAvailable": true,
+    "implementingAgency": {
+      "officialName": "Department of Science and Technology (DST), Government of India (PMU: Society for Innovation and Entrepreneurship (SINE), IIT Bombay)",
+      "verifiedAliases": [
+        "DST",
+        "SINE IIT Bombay"
+      ],
+      "supportedBy": [
+        "src_mv1yb0y"
+      ]
+    },
+    "ministry": {
+      "officialName": "Ministry of Science & Technology",
+      "supportedBy": [],
+      "verifiedAliases": []
+    },
+    "name": "NIDHI PRAYAS 2.0",
+    "officialWebsite": "https://prayas.org",
+    "sourceIds": [
+      "src_mv1yb0y",
+      "src_06jswbw",
+      "src_8nvjskr",
+      "src_p6eipd2"
+    ],
+    "status": null
+  },
+  "sources": [
+    {
+      "authorityLevel": null,
+      "authorityScore": 100,
+      "domain": "cdnbbsr.s3waas.gov.in",
+      "id": "src_mv1yb0y",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "NIDHI PRAYAS 2.0",
+      "url": "https://cdnbbsr.s3waas.gov.in/s312b1e42dc0746f22cf361267de07073f/uploads/2026/05/20260520803129779.pdf"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 100,
+      "domain": "www.startupindia.gov.in",
+      "id": "src_8nvjskr",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "Startup-Schemes-Playbook-June-2026.pdf",
+      "url": "https://www.startupindia.gov.in/content/dam/startupindia/homebanners/Startup-Schemes-Playbook-June-2026.pdf"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 90,
+      "domain": "nidhi.dst.gov.in",
+      "id": "src_06jswbw",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "Homepage | NIDHI - National Initiative for Developing and Harnessing Innovations | Start-to-Scale Startup Support | India",
+      "url": "https://nidhi.dst.gov.in"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 95,
+      "domain": "www.pib.gov.in",
+      "id": "src_ll1x64u",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "Press Release Page | Press Information Bureau",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2214872&reg=3&lang=2"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 90,
+      "domain": "startupmission.kerala.gov.in",
+      "id": "src_zaboy3e",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "Nidhi Prayas Grant | Kerala Startup Mission",
+      "url": "https://startupmission.kerala.gov.in/schemes/nidhi-prayas-grant"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 100,
+      "domain": "socialjustice.gov.in",
+      "id": "src_0krx1rj",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "Annual Report of 2025-26 of the Department",
+      "url": "https://socialjustice.gov.in/writereaddata/UploadFile/71441776233188.pdf"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 70,
+      "domain": "www.indiafilings.com",
+      "id": "src_gq8ct0l",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "Nidhi Prayas - Startup Incubation Support Scheme Guide",
+      "url": "https://www.indiafilings.com/learn/nidhi-prayas"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 30,
+      "domain": "grantedai.com",
+      "id": "src_7b91ggc",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "NIDHI PRAYAS (2026) | Granted AI",
+      "url": "https://grantedai.com/grants/nidhi-prayas-department-of-science-technology-dst-gov-8920b6a0"
+    },
+    {
+      "authorityLevel": null,
+      "authorityScore": 60,
+      "domain": "nidhi-prayas.org",
+      "id": "src_p6eipd2",
+      "retrievedAt": null,
+      "sourceType": null,
+      "title": "Welcome to Nidhi Prayas",
+      "url": "https://nidhi-prayas.org/incubators"
+    }
+  ],
+  "preliminaryCriticalFactCoverage": {
+    "schemeType": "GRANT",
+    "applicableTotal": 8,
+    "supportedApplicable": 7,
+    "unresolvedApplicable": 1,
+    "notApplicable": 0,
+    "coveragePercent": 87.5,
+    "nullCriticalFields": [],
+    "criticalFactsWithoutSource": [
+      "eligibility.educationRequirement"
+    ],
+    "criticalFactsWithSource": [
+      "scheme.name",
+      "scheme.ministry",
+      "scheme.implementingAgency",
+      "scheme.officialDigitalSource",
+      "scheme.status",
+      "financialAssistance.grantAmount",
+      "eligibility.ageLimit"
+    ],
+    "notApplicableFields": [],
+    "requiredCriticalFacts": 8,
+    "extractedCriticalFacts": 8,
+    "sourceSupportedCriticalFacts": 7
+  },
+  "provider": "tavily_groq",
+  "mode": "free_live_test",
+  "liveModelCalls": true,
+  "liveWebResearch": true,
+  "researchId": "res_0hmo8ygr",
+  "stats": {
+    "officialSourcesFound": 4,
+    "secondarySourcesFound": 4,
+    "sourcesRejected": 2,
+    "conflictsFound": 0,
+    "conflictsResolved": 0,
+    "needsHumanReview": [],
+    "tavilyCalls": 5,
+    "groqExtractionCalls": 0,
+    "groqNormalizationCalls": 5,
+    "groqBrowserSearchCalls": 0
+  },
+  "timingMetrics": {
+    "tavilyResearchMs": 6373,
+    "sourceFilteringMs": 4,
+    "evidenceExtractionMs": 0,
+    "normalizationMs": 51437,
+    "verificationMs": 0,
+    "contentGenerationMs": 0,
+    "factGuardMs": 0,
+    "auditMs": 0,
+    "docxMs": 0,
+    "sanityPreviewMs": 0,
+    "totalMs": 61452
+  },
+  "schemeSlug": "nidhi-prayas-scheme-2026",
+  "slug": "nidhi-prayas-scheme-2026",
+  "generatedAt": "2026-09-29T11:29:47.539Z",
+  "sourceFreshness": "2026-09-29T11:29:47.539Z",
+  "researchFingerprint": "41a37a9fa2b91cb25a9f237e8c083337"
+}
