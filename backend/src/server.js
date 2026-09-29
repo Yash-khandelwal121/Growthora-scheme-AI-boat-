@@ -6,11 +6,6 @@ dotenv.config();
 const express = require("express");
 const cors = require("cors");
 
-const schemeRoutes = require("./routes/schemeRoutes");
-const providerRoutes = require("./routes/providerRoutes");
-const exportRoutes = require("./routes/exportRoutes");
-const sanityRoutes = require("./routes/sanityRoutes");
-
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -33,10 +28,24 @@ app.get("/favicon.ico", (req, res) => {
   return res.status(204).end();
 });
 
-app.use("/api/providers", providerRoutes);
-app.use("/api/schemes", schemeRoutes);
-app.use("/api/export", exportRoutes);
-app.use("/api/sanity", sanityRoutes);
+function safeMount(path, modulePath) {
+  try {
+    const router = require(modulePath);
+    app.use(path, router);
+    console.log(`[BOOT_ROUTE_OK] ${path}`);
+  } catch (error) {
+    console.error(`[BOOT_ROUTE_FAILED] ${path}`, {
+      name: error.name,
+      message: error.message,
+      stack: error.stack
+    });
+  }
+}
+
+safeMount("/api/providers", "./routes/providerRoutes");
+safeMount("/api/schemes", "./routes/schemeRoutes");
+safeMount("/api/export", "./routes/exportRoutes");
+safeMount("/api/sanity", "./routes/sanityRoutes");
 
 // Production-safe error handler
 app.use((err, req, res, next) => {
