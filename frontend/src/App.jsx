@@ -589,7 +589,7 @@ function App() {
         </div>
       )}
 
-      <main className="main-content">
+      <main className="dashboard-grid">
         {/* Left Column: Form */}
         <section className="card">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '1rem' }}>
@@ -736,7 +736,7 @@ function App() {
         </section>
 
         {/* Right Column: Progress & Results */}
-        <div className="card-stack" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+        <div className="right-column">
           
           <section className="card">
             <h2 className="card-title">Generation Pipeline</h2>
