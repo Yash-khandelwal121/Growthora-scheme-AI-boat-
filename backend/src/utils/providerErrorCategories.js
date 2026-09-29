@@ -15,6 +15,7 @@ function categorizeProviderError(error, providerName) {
                         message.includes('maximum completion tokens') ||
                         message.includes('valid document');
     if (isTruncated) return 'structured_output_truncated';
+    return 'normalization_schema_mismatch';
   }
   
   if (status === 402 || 
@@ -134,6 +135,15 @@ function parseProviderError(error, providerName) {
           errorCategory: 'STRUCTURED_OUTPUT_TRUNCATED',
           message: 'Output truncated before generating a valid document.',
           retryable: true
+      };
+      customError.statusCode = 400;
+  } else if (category === 'normalization_schema_mismatch') {
+      customError.customPayload = {
+          success: false,
+          provider: providerName.toLowerCase(),
+          errorCategory: 'NORMALIZATION_SCHEMA_MISMATCH',
+          message: 'Schema mismatch during strict JSON validation.',
+          retryable: false
       };
       customError.statusCode = 400;
   }

@@ -3,7 +3,7 @@ const researchSchema = {
   schema: {
     type: "object",
     additionalProperties: false,
-    required: ["scheme", "financialAssistance", "eligibility", "documents", "applicationProcess", "importantDates", "sources"],
+    required: ["scheme", "financialAssistance", "eligibility", "documents", "applicationProcess", "importantDates", "sources", "conflictLog"],
     properties: {
       scheme: {
         type: "object",
@@ -40,10 +40,65 @@ const researchSchema = {
       financialAssistance: {
         type: "object",
         additionalProperties: false,
-        required: ["maxProjectCost", "subsidyStructure"],
+        required: ["assistanceType", "grantAmount", "fundingLimit", "prototypeSupport", "equitySupport", "beneficiaryContribution", "otherSupport", "maxProjectCost", "subsidyStructure", "loanCategories"],
         properties: {
+          assistanceType: { type: ["string", "null"] },
+          grantAmount: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
+          fundingLimit: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
+          prototypeSupport: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
+          equitySupport: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
+          beneficiaryContribution: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
+          otherSupport: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
           maxProjectCost: {
-            type: "object",
+            type: ["object", "null"],
             additionalProperties: false,
             required: ["manufacturing", "service"],
             properties: {
@@ -68,7 +123,7 @@ const researchSchema = {
             }
           },
           subsidyStructure: {
-            type: "array",
+            type: ["array", "null"],
             items: {
               type: "object",
               additionalProperties: false,
@@ -81,16 +136,38 @@ const researchSchema = {
                 supportedBy: { type: "array", items: { type: "string" } }
               }
             }
+          },
+          loanCategories: {
+            type: ["array", "null"],
+            items: {
+              type: "object",
+              additionalProperties: false,
+              required: ["category", "limit", "supportedBy"],
+              properties: {
+                category: { type: ["string", "null"] },
+                limit: { type: ["string", "null"] },
+                supportedBy: { type: "array", items: { type: "string" } }
+              }
+            }
           }
         }
       },
       eligibility: {
         type: "object",
         additionalProperties: false,
-        required: ["ageLimit", "educationRequirement"],
+        required: ["targetBeneficiary", "ageLimit", "educationRequirement", "incomeLimit", "otherCriteria"],
         properties: {
+          targetBeneficiary: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
           ageLimit: {
-            type: "object",
+            type: ["object", "null"],
             additionalProperties: false,
             required: ["value", "supportedBy"],
             properties: {
@@ -99,12 +176,33 @@ const researchSchema = {
             }
           },
           educationRequirement: {
-            type: "object",
+            type: ["object", "null"],
             additionalProperties: false,
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
+          incomeLimit: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["value", "supportedBy"],
+            properties: {
+              value: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
+          otherCriteria: {
+            type: ["array", "null"],
+            items: {
+              type: "object",
+              additionalProperties: false,
+              required: ["criteria", "supportedBy"],
+              properties: {
+                criteria: { type: ["string", "null"] },
+                supportedBy: { type: "array", items: { type: "string" } }
+              }
             }
           }
         }
@@ -143,6 +241,21 @@ const researchSchema = {
             authorityLevel: { type: ["string", "null"] },
             authorityScore: { type: ["number", "null"] },
             retrievedAt: { type: ["string", "null"] }
+          }
+        }
+      },
+      conflictLog: {
+        type: ["array", "null"],
+        items: {
+          type: "object",
+          additionalProperties: false,
+          required: ["field", "values", "sourceIds", "resolution", "status"],
+          properties: {
+            field: { type: ["string", "null"] },
+            values: { type: "array", items: { type: "string" } },
+            sourceIds: { type: "array", items: { type: "string" } },
+            resolution: { type: ["string", "null"] },
+            status: { type: ["string", "null"] }
           }
         }
       }

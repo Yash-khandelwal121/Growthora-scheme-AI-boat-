@@ -22,7 +22,13 @@ async function withGroqRetry(agentName, fallbackModels, operation) {
       const limitType = parsedError.customPayload && parsedError.customPayload.limitType;
       const isDailyLimit = limitType === 'TPD' || limitType === 'RPD';
       const isTruncated = parsedError.customPayload && parsedError.customPayload.errorCategory === 'STRUCTURED_OUTPUT_TRUNCATED';
-      
+      const isSchemaMismatch = parsedError.customPayload && parsedError.customPayload.errorCategory === 'NORMALIZATION_SCHEMA_MISMATCH';
+
+      if (isSchemaMismatch) {
+        logError(`${agentName} encountered deterministic schema mismatch error. Aborting retries.`, { error: lastError.message });
+        throw new Error(`NORMALIZATION_SCHEMA_MISMATCH: ${lastError.message}`);
+      }
+
       if (isDailyLimit || (statusCode === 400 && !isTruncated)) {
         logWarning(`${agentName} encountered ${statusCode} or Daily Limit on ${currentModel}. Falling back to next model...`);
         modelIndex++;

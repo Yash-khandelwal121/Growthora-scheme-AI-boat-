@@ -111,42 +111,12 @@ Produce a JSON object matching the MASTER_SCHEME_RESEARCH_JSON structure.
 CRITICAL SOURCE RULE: You MUST provide "supportedBy" arrays containing source IDs for every extracted fact.
 Do not invent URLs. Only use provided source IDs.
 
-EXPECTED JSON STRUCTURE:
-{
-  "scheme": { 
-    "name": "...", 
-    "status": "...", 
-    "applicationPortalAvailable": true/false,
-    "ministry": { "officialName": "...", "verifiedAliases": [], "supportedBy": [] }, 
-    "implementingAgency": { "officialName": "...", "verifiedAliases": [], "supportedBy": [] }, 
-    "officialWebsite": "...",
-    "sourceIds": []
-  },
-  "financialAssistance": { 
-    "maxProjectCost": { 
-      "manufacturing": { "value": "...", "supportedBy": [] }, 
-      "service": { "value": "...", "supportedBy": [] }
-    },
-    "subsidyStructure": [
-      {
-        "beneficiaryCategory": "...",
-        "contribution": "...",
-        "urbanSubsidy": "...",
-        "ruralSubsidy": "...",
-        "supportedBy": []
-      }
-    ]
-  },
-  "eligibility": { 
-    "ageLimit": { "value": "...", "supportedBy": [] }, 
-    "educationRequirement": { "value": "...", "supportedBy": [] }
-  },
-  "documents": ["..."],
-  "applicationProcess": { "type": "...", "steps": ["..."], "sourceIds": [] },
-  "importantDates": { "applicationDeadline": "..." },
-  "sources": []
-}
-Ensure the "sources" array contains the sources with their titles and URLs strictly from the provided list.
+EXPECTED JSON SCHEMA PROPERTIES:
+${JSON.stringify(researchSchema.schema.properties, null, 2)}
+
+FILTERING RULE: Ignore and reject any source that is NOT directly relevant to ${researchContext.schemeName} or its administrating ministry. Do NOT use facts from unrelated schemes.
+Ensure the "sources" array contains the sources with their titles and plain URLs strictly from the provided list.
+DO NOT USE MARKDOWN FOR URLs (e.g. use "https://example.com", NOT "[link](https://example.com)").
   `;
 
   // STAGE B: STRUCTURED NORMALIZATION
@@ -196,13 +166,48 @@ Ensure the "sources" array contains the sources with their titles and URLs stric
     needsHumanReview: parsedData.importantDates?.applicationDeadline ? [] : ["Application deadline unverified"]
   };
   
-  // Check for fake URLs
+  // Check for fake URLs and clean markdown URLs
   parsedData.sources.forEach(s => {
-    if (s.url && s.url.includes('example.gov.in')) {
-      s.url = null;
-      parsedData.stats.needsHumanReview.push("Removed fake example.gov.in URL");
+    if (s.url) {
+      // Clean markdown URLs e.g. [https://...](https://...)
+      s.url = s.url.replace(/^\[.*\]\((.*)\)$/, '$1');
+      if (s.url.includes('example.gov.in')) {
+        s.url = null;
+        parsedData.stats.needsHumanReview.push("Removed fake example.gov.in URL");
+      }
     }
   });
+
+  if (parsedData.scheme?.officialWebsite) {
+    parsedData.scheme.officialWebsite = parsedData.scheme.officialWebsite.replace(/^\[.*\]\((.*)\)$/, '$1');
+  }
+  
+  // Enforce supportedBy and sourceIds rule
+  const enforceSupportedBy = (obj) => {
+    if (!obj || typeof obj !== 'object') return;
+    Object.keys(obj).forEach(k => {
+      if (obj[k] && typeof obj[k] === 'object' && 'supportedBy' in obj[k]) {
+        if ('value' in obj[k] && obj[k].value && (!Array.isArray(obj[k].supportedBy) || obj[k].supportedBy.length === 0)) {
+          obj[k].value = null; 
+        }
+        if ('officialName' in obj[k] && obj[k].officialName && (!Array.isArray(obj[k].supportedBy) || obj[k].supportedBy.length === 0)) {
+          obj[k].officialName = null; 
+        }
+      }
+      if (obj[k] && typeof obj[k] === 'object' && 'sourceIds' in obj[k]) {
+        if (('steps' in obj[k] && obj[k].steps && obj[k].steps.length > 0) || ('name' in obj[k] && obj[k].name)) {
+          if (!Array.isArray(obj[k].sourceIds) || obj[k].sourceIds.length === 0) {
+            if ('steps' in obj[k]) obj[k].steps = [];
+            if ('type' in obj[k]) obj[k].type = null;
+          }
+        }
+      }
+      if (obj[k] && typeof obj[k] === 'object') {
+        enforceSupportedBy(obj[k]);
+      }
+    });
+  };
+  enforceSupportedBy(parsedData);
   
   logInfo('Groq Structured Normalization completed', { researchId: parsedData.researchId });
   
