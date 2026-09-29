@@ -182,89 +182,190 @@ Return exact JSON structure:
   let parsedData = await performNormalization(compactEvidenceList);
   let coverage = calculateCriticalFactCoverage(parsedData);
 
-  // 4. GAP-FILL ONLY WHEN REQUIRED (< 95%)
-  if (coverage.coveragePercent < 95) {
-    logWarning(`Preliminary coverage is ${coverage.coveragePercent}%. Running GAP FILL for missing fields:`, coverage.nullCriticalFields);
+  // 4. TARGETED GAP-FILL ONLY FOR MISSING FIELDS
+  if (coverage.coveragePercent < 95 || coverage.nullCriticalFields.length > 0 || coverage.criticalFactsWithoutSource.length > 0) {
+    const allMissing = [...coverage.nullCriticalFields, ...coverage.criticalFactsWithoutSource];
+    logWarning(`Preliminary coverage is ${coverage.coveragePercent}%. Running TARGETED GAP FILL for:`, allMissing);
 
-    let gapFillQueries = [];
-    const fieldsStr = coverage.nullCriticalFields.join(' ');
+    const targetFields = [
+      'scheme.implementingAgency',
+      'financialAssistance.grantAmount',
+      'eligibility.ageLimit',
+      'eligibility.educationRequirement'
+    ];
 
-    if (fieldsStr.includes('eligibility')) {
-      gapFillQueries.push({ category: 'eligibility', query: `${researchContext.schemeName} eligibility criteria requirements official site:gov.in` });
-    }
-    if (fieldsStr.includes('documents') || fieldsStr.includes('application')) {
-      gapFillQueries.push({ category: 'documents', query: `${researchContext.schemeName} documents required application apply online portal official` });
-    }
-    if (fieldsStr.includes('financialAssistance') || fieldsStr.includes('subsidy')) {
-      gapFillQueries.push({ category: 'financialAssistance', query: `${researchContext.schemeName} subsidy details financial assistance limit official` });
-    }
+    const fieldsToFill = allMissing.filter(f => targetFields.includes(f));
 
-    gapFillQueries = gapFillQueries.slice(0, 2);
+    for (const field of fieldsToFill) {
+      let queries = [];
+      if (field === 'scheme.implementingAgency') {
+        queries.push(`${researchContext.schemeName} implementing agency nodal body official site:gov.in`);
+        queries.push(`${researchContext.schemeName} who implements administers ministry site:gov.in`);
+      } else if (field === 'financialAssistance.grantAmount') {
+        queries.push(`${researchContext.schemeName} grant amount prototype support financial assistance limit site:gov.in`);
+      } else if (field === 'eligibility.ageLimit') {
+        queries.push(`${researchContext.schemeName} age limit requirement minimum maximum age site:gov.in`);
+      } else if (field === 'eligibility.educationRequirement') {
+        queries.push(`${researchContext.schemeName} education qualification requirement degree diploma site:gov.in`);
+      }
 
-    if (gapFillQueries.length === 0) {
-      gapFillQueries.push({ category: 'general', query: `${researchContext.schemeName} official details guidelines site:gov.in` });
-    }
+      // Max 2 targeted searches
+      queries = queries.slice(0, 2);
 
-    // Parallel gap-fill queries
-    const gapPromises = gapFillQueries.map(async (group) => {
-      try {
-        tavilyCalls++;
-        const response = await fetch('https://api.tavily.com/search', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ api_key: apiKey, query: group.query, search_depth: "advanced", include_answer: false, max_results: 3 }),
-          signal: AbortSignal.timeout(12000)
-        });
-        if (response.ok) {
-          const data = await response.json();
-          return { category: group.category, results: data.results || [] };
+      let fieldSnippets = [];
+
+      // Reuse existing snippets first
+      for (const snippet of compactEvidenceList) {
+        if (snippet.evidence.toLowerCase().includes(field.split('.').pop().toLowerCase())) {
+          fieldSnippets.push(snippet);
         }
-      } catch (err) {}
-      return { category: group.category, results: [] };
-    });
+      }
 
-    const gapResults = await Promise.allSettled(gapPromises);
-
-    for (const res of gapResults) {
-      if (res.status !== 'fulfilled') continue;
-      const { category, results } = res.value;
-
-      for (const result of results) {
-        const auth = analyzeSourceAuthority(result.url, researchContext.schemeName, result.content);
-        if (auth.authorityLevel !== 'invalid_url') {
-          let sourceId = '';
-          if (!uniqueUrls.has(result.url)) {
-            uniqueUrls.add(result.url);
-            sourceId = 'src_' + Math.random().toString(36).substring(2, 9);
-            sources.push({
-              id: sourceId,
-              title: result.title || auth.domain,
-              url: result.url,
-              domain: auth.domain,
-              sourceType: auth.authorityLevel,
-              authorityLevel: auth.authorityLevel,
-              authorityScore: auth.authorityScore,
-              retrievedAt: new Date().toISOString()
-            });
-          } else {
-            sourceId = sources.find(s => s.url === result.url).id;
+      // Run new queries
+      const gapPromises = queries.map(async (query) => {
+        try {
+          tavilyCalls++;
+          const response = await fetch('https://api.tavily.com/search', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ api_key: apiKey, query: query, search_depth: "advanced", include_answer: false, max_results: 3 }),
+            signal: AbortSignal.timeout(12000)
+          });
+          if (response.ok) {
+            const data = await response.json();
+            return data.results || [];
           }
+        } catch (err) {}
+        return [];
+      });
 
-          if (auth.authorityScore >= 60) {
-            compactEvidenceList.push({
-              sourceId,
-              title: result.title || auth.domain,
-              category,
-              evidence: (result.content || '').substring(0, 500)
-            });
+      const gapResults = await Promise.allSettled(gapPromises);
+
+      for (const res of gapResults) {
+        if (res.status !== 'fulfilled') continue;
+        for (const result of res.value) {
+          const auth = analyzeSourceAuthority(result.url, researchContext.schemeName, result.content);
+          if (auth.authorityLevel !== 'invalid_url') {
+            let sourceId = '';
+            if (!uniqueUrls.has(result.url)) {
+              uniqueUrls.add(result.url);
+              sourceId = 'src_' + Math.random().toString(36).substring(2, 9);
+              sources.push({
+                id: sourceId,
+                title: result.title || auth.domain,
+                url: result.url,
+                domain: auth.domain,
+                sourceType: auth.authorityLevel,
+                authorityLevel: auth.authorityLevel,
+                authorityScore: auth.authorityScore,
+                retrievedAt: new Date().toISOString()
+              });
+            } else {
+              sourceId = sources.find(s => s.url === result.url).id;
+            }
+
+            if (auth.authorityScore >= 60) {
+              fieldSnippets.push({
+                sourceId,
+                evidence: (result.content || '').substring(0, 500)
+              });
+            }
+          }
+        }
+      }
+
+      if (fieldSnippets.length > 0) {
+        // Send ONLY these snippets to Groq to extract the specific field
+        const snippetsContext = fieldSnippets.slice(0, 5).map(s => `[${s.sourceId}] ${s.evidence}`).join('\n\n');
+        
+        const extractPrompt = `
+Extract the exact value for the field '${field}' from the following snippets.
+Do NOT use outside knowledge. 
+If the snippet explicitly states that this requirement does NOT exist (e.g., 'no age limit', 'any education'), return value as 'Not applicable'.
+If there is no information about '${field}' in the snippets, return value as null.
+You MUST return the sourceId exactly as it appears in brackets (e.g. src_abc123) next to the evidence you used.
+
+Snippets:
+${snippetsContext}
+`;
+
+        const extractionSchema = {
+          name: "field_extraction",
+          schema: {
+            type: "object",
+            properties: {
+              value: { type: ["string", "null"] },
+              sourceId: { type: ["string", "null"] },
+              evidenceText: { type: ["string", "null"] },
+              confidence: { type: "number" }
+            },
+            required: ["value", "sourceId", "evidenceText", "confidence"],
+            additionalProperties: false
+          }
+        };
+
+        try {
+          // Use primary -> fallback, NO heavy model by default
+          const targetModels = [getGroqResearchPrimaryModel(), getGroqResearchFallbackModel()];
+          const extractResponse = await withGroqRetry('TargetedGapFill', targetModels, async (currentModel, attempt) => {
+            groqExtractionCalls++;
+            const config = {
+              model: currentModel,
+              messages: [
+                { role: 'system', content: 'You extract specific data strictly from provided snippets. Output JSON only.' },
+                { role: 'user', content: extractPrompt }
+              ],
+              temperature: 0.0,
+              max_tokens: 500,
+              response_format: { type: "json_schema", json_schema: { name: extractionSchema.name, schema: extractionSchema.schema, strict: true } }
+            };
+            return await groqClient.chat.completions.create(config);
+          });
+
+          const content = extractResponse.choices[0].message.content;
+          const extracted = JSON.parse(content);
+
+          if (extracted.value && extracted.sourceId) {
+            // Apply it to parsedData
+            if (field === 'scheme.implementingAgency') {
+              if (!parsedData.scheme.implementingAgency) parsedData.scheme.implementingAgency = {};
+              parsedData.scheme.implementingAgency.officialName = extracted.value;
+              parsedData.scheme.implementingAgency.supportedBy = [extracted.sourceId];
+            } else if (field === 'financialAssistance.grantAmount') {
+              if (!parsedData.financialAssistance) parsedData.financialAssistance = {};
+              if (parsedData.schemeType === 'GRANT') {
+                if (!parsedData.financialAssistance.grantAmount) parsedData.financialAssistance.grantAmount = {};
+                parsedData.financialAssistance.grantAmount.value = extracted.value;
+                parsedData.financialAssistance.grantAmount.supportedBy = [extracted.sourceId];
+              }
+            } else if (field === 'eligibility.ageLimit') {
+              if (!parsedData.eligibility) parsedData.eligibility = {};
+              if (!parsedData.eligibility.ageLimit) parsedData.eligibility.ageLimit = {};
+              parsedData.eligibility.ageLimit.value = extracted.value;
+              parsedData.eligibility.ageLimit.supportedBy = [extracted.sourceId];
+            } else if (field === 'eligibility.educationRequirement') {
+              if (!parsedData.eligibility) parsedData.eligibility = {};
+              if (!parsedData.eligibility.educationRequirement) parsedData.eligibility.educationRequirement = {};
+              parsedData.eligibility.educationRequirement.value = extracted.value;
+              parsedData.eligibility.educationRequirement.supportedBy = [extracted.sourceId];
+            }
+          }
+        } catch (error) {
+          logError(`Targeted gap-fill failed for ${field}`, error);
+          if (error.message.includes('RATE_LIMITED') || error.message.includes('model_decommissioned') || error.message.includes('model_not_found') || error.message.includes('tokens')) {
+            return {
+              success: false,
+              errorCategory: "provider_rate_limited",
+              researchStatus: "needs_retry",
+              message: "Groq API limits exhausted during gap-fill."
+            };
           }
         }
       }
     }
 
-    parsedData = await performNormalization(compactEvidenceList);
     coverage = calculateCriticalFactCoverage(parsedData);
-    logInfo(`Coverage after GAP FILL: ${coverage.coveragePercent}%`);
+    logInfo(`Coverage after TARGETED GAP FILL: ${coverage.coveragePercent}%`);
   }
 
   parsedData.preliminaryCriticalFactCoverage = coverage;

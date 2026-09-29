@@ -17,7 +17,7 @@ async function withGroqRetry(agentName, fallbackModels, operation) {
       const parsedError = parseProviderError(error, 'Groq');
       const statusCode = error.status || (error.response && error.response.status);
       
-      const isRetryable = [400, 429, 500, 502, 503, 504].includes(statusCode);
+      const isRetryable = [400, 413, 429, 500, 502, 503, 504].includes(statusCode);
       
       const limitType = parsedError.customPayload && parsedError.customPayload.limitType;
       const isDailyLimit = limitType === 'TPD' || limitType === 'RPD';

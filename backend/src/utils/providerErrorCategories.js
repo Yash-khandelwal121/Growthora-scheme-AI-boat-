@@ -36,7 +36,7 @@ function categorizeProviderError(error, providerName) {
     return 'model_unavailable';
   }
   
-  if (status === 429) {
+  if (status === 429 || status === 413) {
     return 'rate_limited';
   }
   
