@@ -13,13 +13,37 @@ exports.exportDocx = async (req, res) => {
       return res.status(400).json({ success: false, message: 'Invalid or incomplete final article data' });
     }
 
-    const factGuardFailures = content.audit?.failures?.filter(f => f.toLowerCase().includes('factguard'))?.length || 0;
-    const coverage = content.criticalFactCoverage?.coveragePercent || 0;
-    const auditScore = content.audit?.score || 0;
-    const readiness = content.publishReadiness || 'blocked';
+    const auditScore =
+      content.audit?.score ??
+      content.audit?.overallScore ??
+      content.auditResult?.score ??
+      0;
+
+    const auditPassed =
+      content.audit?.passed ??
+      content.auditResult?.passed ??
+      (auditScore >= 95);
+
+    const factGuardFailures =
+      content.factGuard?.failures ??
+      content.factGuard?.failureCount ??
+      content.factGuardResult?.failures ??
+      content.audit?.failures?.filter(f => f.toLowerCase().includes('factguard'))?.length ??
+      0;
+
+    const factGuardPassed =
+      content.factGuard?.passed ??
+      content.factGuardResult?.passed ??
+      (factGuardFailures === 0 && (content.factGuard || content.factGuardResult || content.audit));
+
+    const coverage =
+      content.criticalFactCoverage?.coveragePercent ??
+      (typeof content.criticalFactCoverage === 'number' ? content.criticalFactCoverage : 0);
+
+    const readiness = content.publishReadiness;
 
     const isReady = (
-      factGuardFailures === 0 &&
+      factGuardPassed &&
       coverage >= 95 &&
       auditScore >= 95 &&
       readiness === 'ready'

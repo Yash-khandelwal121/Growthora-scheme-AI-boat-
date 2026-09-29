@@ -373,13 +373,48 @@ function App() {
       return;
     }
     
-    const factGuardFailures = articleData.audit?.failures?.filter(f => f.toLowerCase().includes('factguard'))?.length || 0;
-    const coverage = articleData.criticalFactCoverage?.coveragePercent || 0;
-    const auditScore = articleData.audit?.score || 0;
-    const readiness = articleData.publishReadiness || 'blocked';
+    console.log("[DOCX_GATE_VALUES]", {
+      publishReadiness: articleData?.publishReadiness,
+      audit: articleData?.audit,
+      auditPassed: articleData?.audit?.passed,
+      auditScore: articleData?.audit?.score,
+      factGuard: articleData?.factGuard,
+      factGuardPassed: articleData?.factGuard?.passed,
+      factGuardFailures: articleData?.factGuard?.failures,
+      criticalFactCoverage: articleData?.criticalFactCoverage
+    });
+
+    const auditScore =
+      articleData.audit?.score ??
+      articleData.audit?.overallScore ??
+      articleData.auditResult?.score ??
+      0;
+
+    const auditPassed =
+      articleData.audit?.passed ??
+      articleData.auditResult?.passed ??
+      (auditScore >= 95);
+
+    const factGuardFailures =
+      articleData.factGuard?.failures ??
+      articleData.factGuard?.failureCount ??
+      articleData.factGuardResult?.failures ??
+      articleData.audit?.failures?.filter(f => f.toLowerCase().includes('factguard'))?.length ??
+      0;
+
+    const factGuardPassed =
+      articleData.factGuard?.passed ??
+      articleData.factGuardResult?.passed ??
+      (factGuardFailures === 0 && (articleData.factGuard || articleData.factGuardResult || articleData.audit));
+
+    const coverage =
+      articleData.criticalFactCoverage?.coveragePercent ??
+      (typeof articleData.criticalFactCoverage === 'number' ? articleData.criticalFactCoverage : 0);
+
+    const readiness = articleData.publishReadiness;
 
     const isReady = (
-      factGuardFailures === 0 &&
+      factGuardPassed &&
       coverage >= 95 &&
       auditScore >= 95 &&
       readiness === 'ready'
