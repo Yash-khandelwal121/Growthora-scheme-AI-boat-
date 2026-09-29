@@ -554,7 +554,7 @@ function App() {
     <div className="app-container">
       <header className="header">
         <img 
-          src="/logo.png" 
+          src="/logo3.png" 
           alt="Growthora Logo" 
           className="header-logo"
         />
