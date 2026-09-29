@@ -33,6 +33,15 @@ const researchSchema = {
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
+          programManagementUnit: {
+            type: ["object", "null"],
+            additionalProperties: false,
+            required: ["officialName", "supportedBy"],
+            properties: {
+              officialName: { type: ["string", "null"] },
+              supportedBy: { type: "array", items: { type: "string" } }
+            }
+          },
           officialWebsite: { type: ["string", "null"] },
           sourceIds: { type: "array", items: { type: "string" } }
         }
@@ -49,6 +58,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               breakdown: {
                 type: ["array", "null"],
                 items: {
@@ -70,6 +80,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -79,6 +90,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -88,6 +100,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -97,6 +110,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -106,6 +120,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -175,6 +190,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -184,6 +200,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -193,6 +210,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },
@@ -202,6 +220,7 @@ const researchSchema = {
             required: ["value", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
+              state: { type: ["string", "null"] },
               supportedBy: { type: "array", items: { type: "string" } }
             }
           },

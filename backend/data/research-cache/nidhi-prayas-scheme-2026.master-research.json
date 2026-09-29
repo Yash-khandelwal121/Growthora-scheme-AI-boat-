@@ -32,8 +32,11 @@
       ]
     },
     "educationRequirement": {
-      "value": "NOT_STATED",
-      "supportedBy": []
+      "value": null,
+      "state": "VERIFIED_NOT_STATED",
+      "supportedBy": [
+        "src_mv1yb0y"
+      ]
     }
   },
   "financialAssistance": {
@@ -65,10 +68,9 @@
   "scheme": {
     "applicationPortalAvailable": true,
     "implementingAgency": {
-      "officialName": "Department of Science and Technology (DST), Government of India (PMU: Society for Innovation and Entrepreneurship (SINE), IIT Bombay)",
+      "officialName": "Department of Science and Technology (DST), Government of India",
       "verifiedAliases": [
-        "DST",
-        "SINE IIT Bombay"
+        "DST"
       ],
       "supportedBy": [
         "src_mv1yb0y"
@@ -87,7 +89,13 @@
       "src_8nvjskr",
       "src_p6eipd2"
     ],
-    "status": null
+    "status": null,
+    "programManagementUnit": {
+      "officialName": "Society for Innovation and Entrepreneurship (SINE), IIT Bombay",
+      "supportedBy": [
+        "src_mv1yb0y"
+      ]
+    }
   },
   "sources": [
     {
@@ -183,15 +191,14 @@
   ],
   "preliminaryCriticalFactCoverage": {
     "schemeType": "GRANT",
-    "applicableTotal": 8,
+    "applicableTotal": 7,
     "supportedApplicable": 7,
-    "unresolvedApplicable": 1,
+    "unresolvedApplicable": 0,
     "notApplicable": 0,
-    "coveragePercent": 87.5,
+    "verifiedNotStated": 1,
+    "coveragePercent": 100,
     "nullCriticalFields": [],
-    "criticalFactsWithoutSource": [
-      "eligibility.educationRequirement"
-    ],
+    "criticalFactsWithoutSource": [],
     "criticalFactsWithSource": [
       "scheme.name",
       "scheme.ministry",
@@ -202,8 +209,11 @@
       "eligibility.ageLimit"
     ],
     "notApplicableFields": [],
-    "requiredCriticalFacts": 8,
-    "extractedCriticalFacts": 8,
+    "verifiedNotStatedFields": [
+      "eligibility.educationRequirement"
+    ],
+    "requiredCriticalFacts": 7,
+    "extractedCriticalFacts": 7,
     "sourceSupportedCriticalFacts": 7
   },
   "provider": "tavily_groq",

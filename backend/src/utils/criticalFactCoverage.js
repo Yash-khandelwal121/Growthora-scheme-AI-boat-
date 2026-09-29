@@ -41,14 +41,30 @@ function calculateCriticalFactCoverage(masterResearch) {
   const nullCriticalFields = [];
   const notApplicableFields = [];
 
+  const verifiedNotStatedFields = [];
+
   const evaluateField = (fieldPath, isApplicable, valueGetter, sourcesGetter) => {
     if (!isApplicable) {
       notApplicableFields.push(fieldPath);
       return;
     }
 
-    const val = valueGetter();
-    const sources = sourcesGetter();
+    let val = valueGetter();
+    let sources = sourcesGetter();
+    
+    // Check state if the object has it
+    let state = null;
+    const parts = fieldPath.split('.');
+    if (parts.length === 2 && masterResearch[parts[0]] && masterResearch[parts[0]][parts[1]]) {
+      state = masterResearch[parts[0]][parts[1]].state;
+    } else if (parts.length === 3 && masterResearch[parts[0]] && masterResearch[parts[0]][parts[1]] && masterResearch[parts[0]][parts[1]][parts[2]]) {
+      state = masterResearch[parts[0]][parts[1]][parts[2]].state;
+    }
+
+    if (state === 'VERIFIED_NOT_STATED') {
+      verifiedNotStatedFields.push(fieldPath);
+      return;
+    }
 
     const hasVal = val !== undefined && val !== null && String(val).trim() !== "" && String(val).trim() !== "null";
     const hasSources = Array.isArray(sources) && sources.length > 0;
@@ -242,11 +258,13 @@ function calculateCriticalFactCoverage(masterResearch) {
     supportedApplicable,
     unresolvedApplicable,
     notApplicable: notApplicableTotal,
+    verifiedNotStated: verifiedNotStatedFields.length,
     coveragePercent: Number(coveragePercent.toFixed(1)),
     nullCriticalFields,
     criticalFactsWithoutSource,
     criticalFactsWithSource,
     notApplicableFields,
+    verifiedNotStatedFields,
 
     // Backward compatibility keys
     requiredCriticalFacts: applicableTotal,
