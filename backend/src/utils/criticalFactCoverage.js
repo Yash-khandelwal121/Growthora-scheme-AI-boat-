@@ -11,6 +11,9 @@ function detectSchemeType(masterResearch) {
   if (name.includes("training") || name.includes("kaushal") || name.includes("skill")) {
     return "TRAINING";
   }
+  if (name.includes("grant") || name.includes("prototype") || name.includes("nidhi") || name.includes("prayas")) {
+    return "GRANT";
+  }
   return "SUBSIDY";
 }
 
@@ -67,7 +70,7 @@ function calculateCriticalFactCoverage(masterResearch) {
     () => masterResearch.scheme?.sourceIds || (masterResearch.sources?.length ? [masterResearch.sources[0].id] : [])
   );
 
-  // 2. scheme.ministry (mapped from official PIB/gov.in evidence if unpopulated)
+  // 2. scheme.ministry
   evaluateField(
     'scheme.ministry',
     true,
@@ -90,7 +93,7 @@ function calculateCriticalFactCoverage(masterResearch) {
     }
   );
 
-  // 3. scheme.implementingAgency / lender network (mapped from official evidence for credit schemes)
+  // 3. scheme.implementingAgency
   evaluateField(
     'scheme.implementingAgency',
     true,
@@ -107,7 +110,7 @@ function calculateCriticalFactCoverage(masterResearch) {
       if (schemeType === "LOAN") {
         const officialSrc = (masterResearch.sources || []).find(s => s.authorityScore >= 90 || s.domain?.includes('gov.in'));
         if (officialSrc) {
-          return "Member Lending Institutions (Commercial Banks, RRBs, SFBs, MFIs, NBFCs) / MUDRA SIDBI";
+          return "Member Lending Institutions";
         }
       }
       return null;
@@ -121,7 +124,7 @@ function calculateCriticalFactCoverage(masterResearch) {
     }
   );
 
-  // 4. scheme.officialDigitalSource (officialWebsite / portal / official source link)
+  // 4. scheme.officialDigitalSource
   evaluateField(
     'scheme.officialDigitalSource',
     true,
@@ -139,7 +142,7 @@ function calculateCriticalFactCoverage(masterResearch) {
     }
   );
 
-  // 5. scheme.status (mapped from official PIB/gov.in evidence if present in research sources)
+  // 5. scheme.status
   evaluateField(
     'scheme.status',
     true,
@@ -160,49 +163,24 @@ function calculateCriticalFactCoverage(masterResearch) {
 
   // 6. Financial / Credit Assistance
   if (schemeType === "LOAN") {
-    const hasSectorLimits = Boolean(
-      (masterResearch.financialAssistance?.maxProjectCost?.manufacturing?.supportedBy?.length > 0) ||
-      (masterResearch.financialAssistance?.maxProjectCost?.service?.supportedBy?.length > 0)
-    );
-
-    const hasExplicitSubsidy = Boolean(
-      (masterResearch.financialAssistance?.subsidyStructure && masterResearch.financialAssistance.subsidyStructure.some(s => s.urbanSubsidy || s.ruralSubsidy)) ||
-      masterResearch.financialAssistance?.subsidyDetails
-    );
-
-    evaluateField(
-      'financialAssistance.maxProjectCost.manufacturing',
-      hasSectorLimits,
-      () => masterResearch.financialAssistance?.maxProjectCost?.manufacturing?.value,
-      () => masterResearch.financialAssistance?.maxProjectCost?.manufacturing?.supportedBy || []
-    );
-
-    evaluateField(
-      'financialAssistance.maxProjectCost.service',
-      hasSectorLimits,
-      () => masterResearch.financialAssistance?.maxProjectCost?.service?.value,
-      () => masterResearch.financialAssistance?.maxProjectCost?.service?.supportedBy || []
-    );
-
     evaluateField(
       'financialAssistance.loanCategories',
       true,
-      () => masterResearch.financialAssistance?.loanCategories || masterResearch.financialAssistance?.creditLimits || "Shishu (up to ₹50,000), Kishore (₹50,000 to ₹5 Lakh), Tarun (₹5 Lakh to ₹10 Lakh), Tarun Plus (₹10 Lakh to ₹20 Lakh)",
-      () => masterResearch.financialAssistance?.loanCategoriesSupportedBy || (masterResearch.sources?.length ? [masterResearch.sources[0].id] : [])
+      () => masterResearch.financialAssistance?.loanCategories,
+      () => masterResearch.financialAssistance?.loanCategoriesSupportedBy || []
     );
-
     evaluateField(
       'financialAssistance.subsidyDetails',
-      hasExplicitSubsidy,
+      true,
       () => masterResearch.financialAssistance?.subsidyDetails,
       () => masterResearch.financialAssistance?.subsidySupportedBy || []
     );
-
+  } else if (schemeType === "GRANT") {
     evaluateField(
-      'financialAssistance.beneficiaryContribution',
-      hasExplicitSubsidy,
-      () => masterResearch.financialAssistance?.beneficiaryContribution,
-      () => masterResearch.financialAssistance?.contributionSupportedBy || []
+      'financialAssistance.grantAmount',
+      true,
+      () => masterResearch.financialAssistance?.grantAmount?.value || masterResearch.financialAssistance?.prototypeSupport?.value,
+      () => masterResearch.financialAssistance?.grantAmount?.supportedBy || masterResearch.financialAssistance?.prototypeSupport?.supportedBy || []
     );
   } else {
     evaluateField(
@@ -211,74 +189,26 @@ function calculateCriticalFactCoverage(masterResearch) {
       () => masterResearch.financialAssistance?.maxProjectCost?.manufacturing?.value,
       () => masterResearch.financialAssistance?.maxProjectCost?.manufacturing?.supportedBy || []
     );
-
     evaluateField(
       'financialAssistance.maxProjectCost.service',
       true,
       () => masterResearch.financialAssistance?.maxProjectCost?.service?.value,
       () => masterResearch.financialAssistance?.maxProjectCost?.service?.supportedBy || []
     );
-
-    evaluateField(
-      'financialAssistance.subsidyDetails',
-      true,
-      () => {
-        if (masterResearch.financialAssistance?.subsidyStructure?.length > 0) {
-          return masterResearch.financialAssistance.subsidyStructure[0].urbanSubsidy || masterResearch.financialAssistance.subsidyStructure[0].ruralSubsidy;
-        }
-        return masterResearch.financialAssistance?.subsidyDetails;
-      },
-      () => {
-        if (masterResearch.financialAssistance?.subsidyStructure?.length > 0) {
-          return masterResearch.financialAssistance.subsidyStructure[0].supportedBy || [];
-        }
-        return masterResearch.financialAssistance?.subsidySupportedBy || [];
-      }
-    );
-
-    evaluateField(
-      'financialAssistance.beneficiaryContribution',
-      true,
-      () => {
-        if (masterResearch.financialAssistance?.subsidyStructure?.length > 0) {
-          return masterResearch.financialAssistance.subsidyStructure[0].contribution;
-        }
-        return masterResearch.financialAssistance?.beneficiaryContribution;
-      },
-      () => {
-        if (masterResearch.financialAssistance?.subsidyStructure?.length > 0) {
-          return masterResearch.financialAssistance.subsidyStructure[0].supportedBy || [];
-        }
-        return masterResearch.financialAssistance?.contributionSupportedBy || [];
-      }
-    );
   }
 
   // 7 & 8. Eligibility (Age & Education)
-  const hasExplicitAgeRule = Boolean(
-    masterResearch.eligibility?.ageLimit &&
-    typeof masterResearch.eligibility.ageLimit === 'object' &&
-    Array.isArray(masterResearch.eligibility.ageLimit.supportedBy) &&
-    masterResearch.eligibility.ageLimit.supportedBy.length > 0
-  );
-
+  // For safety check, they are unconditionally applicable for most schemes. If they are missing, they should be UNRESOLVED, not NOT_APPLICABLE.
   evaluateField(
     'eligibility.ageLimit',
-    hasExplicitAgeRule,
+    true,
     () => (masterResearch.eligibility?.ageLimit && typeof masterResearch.eligibility.ageLimit === 'object') ? masterResearch.eligibility.ageLimit.value : masterResearch.eligibility?.ageLimit,
     () => (masterResearch.eligibility?.ageLimit && typeof masterResearch.eligibility.ageLimit === 'object') ? masterResearch.eligibility.ageLimit.supportedBy : []
   );
 
-  const hasExplicitEduRule = Boolean(
-    masterResearch.eligibility?.educationRequirement &&
-    typeof masterResearch.eligibility.educationRequirement === 'object' &&
-    Array.isArray(masterResearch.eligibility.educationRequirement.supportedBy) &&
-    masterResearch.eligibility.educationRequirement.supportedBy.length > 0
-  );
-
   evaluateField(
     'eligibility.educationRequirement',
-    hasExplicitEduRule,
+    true,
     () => masterResearch.eligibility?.educationRequirement?.value,
     () => masterResearch.eligibility?.educationRequirement?.supportedBy || []
   );
