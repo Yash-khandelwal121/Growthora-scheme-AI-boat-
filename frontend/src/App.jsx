@@ -558,63 +558,33 @@ function App() {
           alt="Growthora Logo" 
           className="header-logo"
         />
-        <h1>Growthora Scheme AI</h1>
-        <p>Research • Verify • Optimize • Publish</p>
+        <div className="header-text">
+          <h1>Growthora Scheme AI</h1>
+          <p>Research • Verify • Optimize • Publish</p>
+        </div>
       </header>
 
       {providers.tavily?.liveSearchEnabled ? (
-        <div style={{
-          backgroundColor: '#0288d1',
-          color: '#fff',
-          textAlign: 'center',
-          padding: '0.75rem',
-          fontWeight: 'bold',
-          marginBottom: '1rem',
-          borderRadius: '4px'
-        }}>
-          LIVE WEB RESEARCH — TAVILY + GROQ<br/>
-          <span style={{ fontWeight: 'normal' }}>Tavily is retrieving live web evidence.<br/>Groq is verifying, structuring and generating content.</span>
+        <div className="live-banner live-banner-blue">
+          LIVE WEB RESEARCH — TAVILY + GROQ
+          <span>Tavily is retrieving live web evidence. Groq is verifying, structuring and generating content.</span>
         </div>
       ) : providers.groq?.freeLiveTestEnabled && (
         providers.groq?.liveWebResearchEnabled ? (
-          <div style={{
-            backgroundColor: '#2e7d32',
-            color: '#fff',
-            textAlign: 'center',
-            padding: '0.75rem',
-            fontWeight: 'bold',
-            marginBottom: '1rem',
-            borderRadius: '4px'
-          }}>
-            LIVE WEB RESEARCH — GROQ<br/>
-            <span style={{ fontWeight: 'normal' }}>Real Groq AI and live web research are active. Government sources are being checked before content generation.</span>
+          <div className="live-banner live-banner-green">
+            LIVE WEB RESEARCH — GROQ
+            <span>Real Groq AI and live web research are active. Government sources are being checked before content generation.</span>
           </div>
         ) : (
-          <div style={{
-            backgroundColor: '#0288d1',
-            color: '#fff',
-            textAlign: 'center',
-            padding: '0.75rem',
-            fontWeight: 'bold',
-            marginBottom: '1rem',
-            borderRadius: '4px'
-          }}>
-            FREE LIVE TEST MODE — GROQ<br/>
-            <span style={{ fontWeight: 'normal' }}>Real Groq AI API calls are active. OpenAI, Gemini and Claude APIs are not being called. Live official-source web verification is OFF.</span>
+          <div className="live-banner live-banner-blue">
+            FREE LIVE TEST MODE — GROQ
+            <span>Real Groq AI API calls are active. OpenAI, Gemini and Claude APIs are not being called. Live official-source web verification is OFF.</span>
           </div>
         )
       )}
 
       {researchData?.mode === 'mock' && (
-        <div style={{
-          backgroundColor: '#ff9800',
-          color: '#fff',
-          textAlign: 'center',
-          padding: '0.75rem',
-          fontWeight: 'bold',
-          marginBottom: '1rem',
-          borderRadius: '4px'
-        }}>
+        <div className="live-banner live-banner-orange">
           TEST MODE — MOCK RESEARCH: Development Test Mode — AI providers were not called.
         </div>
       )}
@@ -623,9 +593,9 @@ function App() {
         {/* Left Column: Form */}
         <section className="card">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.5rem', borderBottom: '1px solid var(--color-border)', paddingBottom: '1rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div className="config-header-row">
               <h2 className="card-title" style={{ borderBottom: 'none', margin: 0, padding: 0 }}>Content Generation Config</h2>
-              <div style={{ fontSize: '0.8rem', display: 'flex', gap: '1rem', color: 'var(--color-text-muted)' }}>
+              <div className="provider-status-row">
                 <div><strong>OpenAI:</strong> {providers.openai.configured ? '✅' : '❌'}</div>
                 <div><strong>Gemini:</strong> {providers.gemini.configured ? '✅' : '❌'}</div>
                 <div><strong>Claude:</strong> {providers.anthropic.configured ? '✅' : '❌'}</div>
@@ -635,7 +605,7 @@ function App() {
               </div>
             </div>
             
-            <div style={{ fontSize: '0.8rem', display: 'flex', gap: '1rem', color: 'var(--color-text-muted)', backgroundColor: 'var(--color-bg-alt)', padding: '0.5rem', borderRadius: '4px' }}>
+            <div className="provider-status-row" style={{ backgroundColor: 'var(--color-bg-alt)', padding: '0.5rem', borderRadius: '4px' }}>
               <div><strong>Sanity:</strong> {sanityStatus.configured ? 'Configured' : 'Not Configured'}</div>
               <div><strong>Write Mode:</strong> {sanityStatus.writeEnabled ? 'Enabled' : 'Disabled'}</div>
               <div><strong>Doc Type:</strong> {sanityStatus.documentTypeConfigured ? 'Configured' : 'Missing'}</div>
