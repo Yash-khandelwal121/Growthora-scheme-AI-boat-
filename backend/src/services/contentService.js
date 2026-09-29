@@ -50,10 +50,8 @@ async function generateArticle(masterResearch) {
   }
 
   const { isMockContentEnabled } = require('../config/runtime');
-  const { isFreeLiveTestEnabled } = require('../config/groq');
   
   const isMock = isMockContentEnabled();
-  const isGroq = !isMock && isFreeLiveTestEnabled();
   
   const timingMetrics = {
     ...(masterResearch.timingMetrics || {
@@ -77,13 +75,10 @@ async function generateArticle(masterResearch) {
     logInfo('Content mode: MOCK');
     const { buildDynamicMockArticle } = require('../mocks/mockArticleContent');
     articleData = buildDynamicMockArticle ? buildDynamicMockArticle(masterResearch) : JSON.parse(JSON.stringify(mockArticleContent));
-  } else if (isGroq) {
-    logInfo('Content mode: GROQ_FREE_LIVE_TEST');
-    const { runGroqContentWriter } = require('../agents/groqContentWriterAgent');
-    articleData = await runGroqContentWriter(masterResearch);
   } else {
     logInfo('Content mode: LIVE');
-    throw new Error("Live content generation is not yet implemented.");
+    const { runGroqContentWriter } = require('../agents/groqContentWriterAgent');
+    articleData = await runGroqContentWriter(masterResearch);
   }
   timingMetrics.contentGenerationMs = Date.now() - contentStart;
 
@@ -130,7 +125,7 @@ async function generateArticle(masterResearch) {
 
   // Assemble Final JSON
   const finalArticle = {
-    mode: isMock ? "mock" : (isGroq ? "free_live_test" : "live"),
+    mode: isMock ? "mock" : "live",
     liveContentGeneration: !isMock,
     sourceResearchId: masterResearch.researchId,
     researchSchemeName: masterResearch.scheme?.name || "",
