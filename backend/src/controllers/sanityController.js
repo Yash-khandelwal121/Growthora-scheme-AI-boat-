@@ -1,4 +1,3 @@
-const { previewDraft, pushDraftToSanity } = require('../services/sanityService');
 const { 
   isSanityConfigured, 
   isSanityWriteEnabled, 
@@ -19,6 +18,7 @@ exports.getStatus = (req, res) => {
 
 exports.preview = async (req, res) => {
   try {
+    const { previewDraft } = require('../services/sanityService');
     const { content, categoryId } = req.body;
     if (!content) return res.status(400).json({ success: false, message: 'Missing content' });
     
@@ -39,6 +39,7 @@ exports.preview = async (req, res) => {
 
 exports.draft = async (req, res) => {
   try {
+    const { pushDraftToSanity } = require('../services/sanityService');
     const { content, categoryId } = req.body;
     if (!content) return res.status(400).json({ success: false, message: 'Missing content' });
 

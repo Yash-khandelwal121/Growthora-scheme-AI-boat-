@@ -1,5 +1,3 @@
-const { createClient } = require('@sanity/client');
-
 let sanityClient = null;
 
 function isSanityConfigured() {
@@ -31,6 +29,7 @@ function getSanityClient() {
   }
 
   if (!sanityClient) {
+    const { createClient } = require('@sanity/client');
     sanityClient = createClient({
       projectId: process.env.SANITY_PROJECT_ID,
       dataset: process.env.SANITY_DATASET,
