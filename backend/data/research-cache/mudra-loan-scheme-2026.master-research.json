@@ -35,7 +35,12 @@
     }
   },
   "financialAssistance": {
-    "loanCategories": "Shishu (up to ₹50,000), Kishore (₹50,000 to ₹5 Lakh), Tarun (₹5 Lakh to ₹10 Lakh), Tarun Plus (₹10 Lakh to ₹20 Lakh)",
+    "loanCategories": {
+      "value": "Shishu (up to ₹50,000), Kishore (above ₹50,000 and up to ₹5 lakh), Tarun (above ₹5 lakh and up to ₹10 lakh), Tarun Plus (above ₹10 lakh and up to ₹20 lakh)",
+      "supportedBy": [
+        "src_97anp73"
+      ]
+    },
     "loanCategoriesSupportedBy": [
       "src_97anp73"
     ],
@@ -52,8 +57,10 @@
     "subsidyStructure": [],
     "subsidyDetails": {
       "value": null,
-      "state": "NOT_APPLICABLE",
-      "supportedBy": []
+      "state": "VERIFIED_NOT_STATED",
+      "supportedBy": [
+        "src_97anp73"
+      ]
     }
   },
   "eligibility": {
@@ -156,8 +163,8 @@
     "applicableTotal": 6,
     "supportedApplicable": 6,
     "unresolvedApplicable": 0,
-    "notApplicable": 1,
-    "verifiedNotStated": 2,
+    "notApplicable": 0,
+    "verifiedNotStated": 3,
     "coveragePercent": 100,
     "nullCriticalFields": [],
     "criticalFactsWithoutSource": [],
@@ -169,10 +176,9 @@
       "scheme.status",
       "financialAssistance.loanCategories"
     ],
-    "notApplicableFields": [
-      "financialAssistance.subsidyDetails"
-    ],
+    "notApplicableFields": [],
     "verifiedNotStatedFields": [
+      "financialAssistance.subsidyDetails",
       "eligibility.ageLimit",
       "eligibility.educationRequirement"
     ],
