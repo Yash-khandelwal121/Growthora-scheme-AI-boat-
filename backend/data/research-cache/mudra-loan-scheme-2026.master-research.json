@@ -49,7 +49,12 @@
         "supportedBy": []
       }
     },
-    "subsidyStructure": []
+    "subsidyStructure": [],
+    "subsidyDetails": {
+      "value": null,
+      "state": "NOT_APPLICABLE",
+      "supportedBy": []
+    }
   },
   "eligibility": {
     "targetBeneficiary": {
@@ -79,6 +84,20 @@
     },
     "noCollateral": {
       "value": "Collateral-free credit support without third-party guarantee",
+      "supportedBy": [
+        "src_97anp73"
+      ]
+    },
+    "ageLimit": {
+      "value": null,
+      "state": "VERIFIED_NOT_STATED",
+      "supportedBy": [
+        "src_97anp73"
+      ]
+    },
+    "educationRequirement": {
+      "value": null,
+      "state": "VERIFIED_NOT_STATED",
       "supportedBy": [
         "src_97anp73"
       ]
@@ -137,7 +156,8 @@
     "applicableTotal": 6,
     "supportedApplicable": 6,
     "unresolvedApplicable": 0,
-    "notApplicable": 6,
+    "notApplicable": 1,
+    "verifiedNotStated": 2,
     "coveragePercent": 100,
     "nullCriticalFields": [],
     "criticalFactsWithoutSource": [],
@@ -150,10 +170,9 @@
       "financialAssistance.loanCategories"
     ],
     "notApplicableFields": [
-      "financialAssistance.maxProjectCost.manufacturing",
-      "financialAssistance.maxProjectCost.service",
-      "financialAssistance.subsidyDetails",
-      "financialAssistance.beneficiaryContribution",
+      "financialAssistance.subsidyDetails"
+    ],
+    "verifiedNotStatedFields": [
       "eligibility.ageLimit",
       "eligibility.educationRequirement"
     ],
