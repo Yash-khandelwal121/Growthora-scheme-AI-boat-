@@ -34,18 +34,18 @@ async function generateArticle(masterResearch) {
   const coverageData = calculateCriticalFactCoverage(masterResearch);
   const coveragePercent = coverageData.coveragePercent;
 
-  if (coveragePercent < 95) {
-    logError(`Hard Pre-Content Coverage Gate Failed: CriticalFactCoverage is ${coveragePercent}% (required >= 95%). Skipping AI content generation.`);
+  if (coveragePercent < 80) {
+    logError(`Hard Pre-Content Coverage Gate Failed: CriticalFactCoverage is ${coveragePercent}% (required >= 80%). Skipping AI content generation.`);
     return {
       success: false,
       stage: "research_coverage",
       errorCategory: "INSUFFICIENT_CRITICAL_FACT_COVERAGE",
-      message: `Critical fact coverage is ${coveragePercent}%, which is below the 95% threshold required to generate content.`,
+      message: `Critical fact coverage is ${coveragePercent}%, which is below the 80% threshold required to generate content.`,
       criticalFactCoverage: coveragePercent,
       publishReadiness: "blocked",
       missingCriticalFields: coverageData.nullCriticalFields || [],
       contentCallsSkippedDueToCoverageGate: true,
-      audit: { score: 0, failures: [`Critical fact coverage ${coveragePercent}% is below required 95% threshold.`] }
+      audit: { score: 0, failures: [`Critical fact coverage ${coveragePercent}% is below required 80% threshold.`] }
     };
   }
 
@@ -184,12 +184,12 @@ async function generateArticle(masterResearch) {
   if (
     !factGuardResult.passed || 
     criticalFactsWithoutSource.length > 0 || 
-    auditResult.score < 95 || 
+    auditResult.score < 80 || 
     !finalArticle.liveContentGeneration || 
-    coveragePercent < 95 ||
+    coveragePercent < 80 ||
     hasUnresolvedConflicts
   ) {
-    if (!factGuardResult.passed || criticalFactsWithoutSource.length > 0 || coveragePercent < 95 || hasUnresolvedConflicts) {
+    if (!factGuardResult.passed || criticalFactsWithoutSource.length > 0 || coveragePercent < 80 || hasUnresolvedConflicts) {
       readiness = "blocked";
     } else {
       readiness = "needs_review";

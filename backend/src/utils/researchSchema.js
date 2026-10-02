@@ -8,7 +8,7 @@ const researchSchema = {
       scheme: {
         type: "object",
         additionalProperties: false,
-        required: ["name", "status", "applicationPortalAvailable", "ministry", "implementingAgency", "officialWebsite", "sourceIds"],
+        required: ["name", "status", "applicationPortalAvailable", "ministry", "implementingAgency", "programManagementUnit", "officialWebsite", "sourceIds"],
         properties: {
           name: { type: ["string", "null"] },
           status: { type: ["string", "null"] },
@@ -55,7 +55,7 @@ const researchSchema = {
           grantAmount: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "breakdown", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -77,7 +77,7 @@ const researchSchema = {
           fundingLimit: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -87,7 +87,7 @@ const researchSchema = {
           prototypeSupport: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -97,7 +97,7 @@ const researchSchema = {
           equitySupport: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -107,7 +107,7 @@ const researchSchema = {
           beneficiaryContribution: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -117,7 +117,7 @@ const researchSchema = {
           otherSupport: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -187,7 +187,7 @@ const researchSchema = {
           targetBeneficiary: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -197,7 +197,7 @@ const researchSchema = {
           ageLimit: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -207,7 +207,7 @@ const researchSchema = {
           educationRequirement: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },
@@ -217,7 +217,7 @@ const researchSchema = {
           incomeLimit: {
             type: ["object", "null"],
             additionalProperties: false,
-            required: ["value", "supportedBy"],
+            required: ["value", "state", "supportedBy"],
             properties: {
               value: { type: ["string", "null"] },
               state: { type: ["string", "null"] },

@@ -255,7 +255,11 @@ function calculateCriticalFactCoverage(masterResearch) {
     } else if (hasVal && !hasSources) {
       criticalFactsWithoutSource.push(fieldPath);
     } else {
-      nullCriticalFields.push(fieldPath);
+      if (isConditional) {
+        verifiedNotStatedFields.push(fieldPath);
+      } else {
+        nullCriticalFields.push(fieldPath);
+      }
     }
   };
 

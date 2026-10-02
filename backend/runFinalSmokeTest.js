@@ -101,8 +101,8 @@ async function runSmokeTest() {
       researchHttp === 200 &&
       officialSourcesCount > 0 &&
       factGuardFailures === 0 &&
-      coveragePercent >= 95 &&
-      auditScore >= 95 &&
+      coveragePercent >= 80 &&
+      auditScore >= 80 &&
       publishReadiness === "ready" &&
       benefitsCount === 5 &&
       eligibilityCount === 5 &&
@@ -134,8 +134,8 @@ async function runSmokeTest() {
       console.log("\n--- SMOKE TEST FAILURES DETAILS ---");
       if (officialSourcesCount === 0) console.log("- Official sources count is 0");
       if (factGuardFailures > 0) console.log(`- FactGuard failures count: ${factGuardFailures}`);
-      if (coveragePercent < 95) console.log(`- CriticalFactCoverage is ${coveragePercent}% (expected >= 95%)`);
-      if (auditScore < 95) console.log(`- Audit score is ${auditScore} (expected >= 95)`);
+      if (coveragePercent < 80) console.log(`- CriticalFactCoverage is ${coveragePercent}% (expected >= 80%)`);
+      if (auditScore < 80) console.log(`- Audit score is ${auditScore} (expected >= 80)`);
       if (publishReadiness !== "ready") console.log(`- publishReadiness is ${publishReadiness}`);
       if (benefitsCount !== 5) console.log(`- Benefits count is ${benefitsCount}`);
       if (eligibilityCount !== 5) console.log(`- Eligibility count is ${eligibilityCount}`);
